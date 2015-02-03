@@ -1,0 +1,135 @@
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\BBBoss.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\BBBoss.pdb
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\Antlr3.Runtime.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.AspNet.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.Core.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\EntityFramework.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\Microsoft.Web.Infrastructure.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\Newtonsoft.Json.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.Helpers.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.Mvc.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.Optimization.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.Razor.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.Deployment.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.Razor.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\WebGrease.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\WebMatrix.Data.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\WebMatrix.WebData.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\EntityFramework.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\Newtonsoft.Json.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.Helpers.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.Mvc.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.Razor.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.Deployment.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.Razor.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\WebMatrix.Data.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\WebMatrix.WebData.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.AspNet.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.Core.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\obj\Debug\BBBoss.csprojResolveAssemblyReference.cache
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\obj\Debug\BBBoss.dll
+c:\users\jonscotty\documents\visual studio 2012\Projects\BBBoss\BBBoss\obj\Debug\BBBoss.pdb
+C:\Projects\BBBoss\BBBoss\bin\BBBoss.dll
+C:\Projects\BBBoss\BBBoss\bin\BBBoss.pdb
+C:\Projects\BBBoss\BBBoss\bin\Antlr3.Runtime.dll
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.AspNet.dll
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.Core.dll
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.dll
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.dll
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Projects\BBBoss\BBBoss\bin\EntityFramework.dll
+C:\Projects\BBBoss\BBBoss\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\BBBoss\BBBoss\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Projects\BBBoss\BBBoss\bin\Newtonsoft.Json.dll
+C:\Projects\BBBoss\BBBoss\bin\System.Web.Helpers.dll
+C:\Projects\BBBoss\BBBoss\bin\System.Web.Mvc.dll
+C:\Projects\BBBoss\BBBoss\bin\System.Web.Optimization.dll
+C:\Projects\BBBoss\BBBoss\bin\System.Web.Razor.dll
+C:\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.dll
+C:\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.Razor.dll
+C:\Projects\BBBoss\BBBoss\bin\WebGrease.dll
+C:\Projects\BBBoss\BBBoss\bin\WebMatrix.Data.dll
+C:\Projects\BBBoss\BBBoss\bin\WebMatrix.WebData.dll
+C:\Projects\BBBoss\BBBoss\bin\EntityFramework.xml
+C:\Projects\BBBoss\BBBoss\bin\Newtonsoft.Json.xml
+C:\Projects\BBBoss\BBBoss\bin\System.Web.Helpers.xml
+C:\Projects\BBBoss\BBBoss\bin\System.Web.Mvc.xml
+C:\Projects\BBBoss\BBBoss\bin\System.Web.Razor.xml
+C:\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.xml
+C:\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\BBBoss\BBBoss\bin\System.Web.WebPages.Razor.xml
+C:\Projects\BBBoss\BBBoss\bin\WebMatrix.Data.xml
+C:\Projects\BBBoss\BBBoss\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Projects\BBBoss\BBBoss\bin\WebMatrix.WebData.xml
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.AspNet.xml
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.Core.xml
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.xml
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.xml
+C:\Projects\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Projects\BBBoss\BBBoss\obj\Debug\BBBoss.csprojResolveAssemblyReference.cache
+C:\Projects\BBBoss\BBBoss\obj\Debug\BBBoss.dll
+C:\Projects\BBBoss\BBBoss\obj\Debug\BBBoss.pdb
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\BBBoss.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\BBBoss.pdb
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\Antlr3.Runtime.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.Core.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\EntityFramework.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\Newtonsoft.Json.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Net.Http.Formatting.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Helpers.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Http.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Http.WebHost.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Mvc.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Optimization.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Razor.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.WebPages.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\WebGrease.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\WebMatrix.Data.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\WebMatrix.WebData.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\EntityFramework.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\Newtonsoft.Json.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Net.Http.Formatting.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Helpers.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Http.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Http.WebHost.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Mvc.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.Razor.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.WebPages.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\WebMatrix.Data.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\WebMatrix.WebData.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.Core.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\obj\Debug\BBBoss.csprojResolveAssemblyReference.cache
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\obj\Debug\BBBoss.dll
+C:\Users\Kyle\Desktop\BBBoss\BBBoss\obj\Debug\BBBoss.pdb
