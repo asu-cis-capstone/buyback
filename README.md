@@ -18,7 +18,14 @@ The referral program will be modeled after several recently successful programs 
   * A back-end solution to analyze the ROI for the referral program (i.e., what percent of customers refer? On average how many customers does each person refer?) 
 
 ###How To Install
-Information to come in v0.2
+ 1. Install Visual Studio, any version with ASP.NET framework (free through ASU Dreamspark)
+ 2. Install SQL Server (free through ASU Dreamspark)
+ 3. Download the file "BBBoss.sln" in the folder "BBBoss" 
+ 4. Open your copy of "BBBoss.sln" in Visual Stuido
+ 5. Run the following SQL Scripts to set up tables to test the database:
+      * INSERT SQL SCRIPTS HERE
+
+NOTE: Steps 2 and 5 are only necessary if you wish to test/make changes to the database structure.  If you only wish to edit the HTML, CSS, or C# code, ONLY steps 1, 3 and 4 are necessary.
 
 
 ###List of Contributers
