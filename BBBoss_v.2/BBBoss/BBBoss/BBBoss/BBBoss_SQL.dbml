@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BBBoss" Class="BBBoss_SQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=JONSCOTTY-PC\TESTDB;Initial Catalog=BBBoss;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BBBossConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Accounts" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="AccountId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="State" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Zip" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReferralCode" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Order" Member="Orders" ThisKey="AccountId" OtherKey="AccountId" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Models" Member="Models">
+    <Type Name="Model">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Model" Member="Model1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Carrier" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Size" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Model_Order" Member="Orders" ThisKey="Id" OtherKey="ModelId" Type="Order" />
+      <Association Name="Model_Quote" Member="Quotes" ThisKey="Id" OtherKey="ModelId" Type="Quote" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Orders" Member="Orders">
+    <Type Name="Order">
+      <Column Name="OrderId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModelId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ESN" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="PostedPrice" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="AdjustedPrice" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ShipStatus" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateRecieved" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateShipped" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateConfirmed" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Payment" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ReferralCode" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PostalRouting" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TrackingNumber" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="Account_Order" Member="Account" ThisKey="AccountId" OtherKey="AccountId" Type="Account" IsForeignKey="true" />
+      <Association Name="Model_Order" Member="Model" ThisKey="ModelId" OtherKey="Id" Type="Model" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Quotes" Member="Quotes">
+    <Type Name="Quote">
+      <Column Name="ModelId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Mint" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Good" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Poor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Broken" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Dead" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Model_Quote" Member="Model" ThisKey="ModelId" OtherKey="Id" Type="Model" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.test" Member="tests">
+    <Type Name="test">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="shtuff" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

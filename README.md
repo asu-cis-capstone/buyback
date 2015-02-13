@@ -18,7 +18,13 @@ The referral program will be modeled after several recently successful programs 
   * A back-end solution to analyze the ROI for the referral program (i.e., what percent of customers refer? On average how many customers does each person refer?) 
 
 ###How To Install
-Information to come in v0.2
+ 1. Install Visual Studio, any version with ASP.NET framework (free through ASU Dreamspark)
+ 2. Install SQL Server (free through ASU Dreamspark)
+ 3. Download folder "BBBoss_v.2" to your computer
+ 4. Open your copy of "BBBoss.sln" in Visual Stuido (this file can be found within folder BBBoss)
+ 5. Open the folder "SQLServer" within the "BBBoss" folder and run the file, "BuyBackBoss_Tables.sql" in SQL Server
+
+NOTE: Steps 2 and 5 are only necessary if you wish to test/make changes to the database structure.  If you only wish to edit the HTML, CSS, or C# code, ONLY steps 1, 3 and 4 are necessary.
 
 
 ###List of Contributers
@@ -32,6 +38,12 @@ Information to come in v0.2
   * Repo created
   * Contributers added
   * Initial project scope and mockups added 
+
+###v0.2 Release Notes
+  * Added "How to Install" section
+  * Set up technology stack
+  * Connected database and Visual Studio
+  * Set up initial file structure
 
 
 
