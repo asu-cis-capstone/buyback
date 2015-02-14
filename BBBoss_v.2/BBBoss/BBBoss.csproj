@@ -40,6 +40,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MobileDevice">
+      <HintPath>..\..\Classes\MobileDevice.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -171,7 +174,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="BBBoss_SQL.designer.cs">
+    <Compile Include="DataContexts\BBBoss_SQL.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BBBoss_SQL.dbml</DependentUpon>
@@ -253,7 +256,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="BBBoss_SQL.dbml">
+    <Content Include="DataContexts\BBBoss_SQL.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>BBBoss_SQL.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
@@ -327,7 +330,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="BBBoss_SQL.dbml.layout">
+    <None Include="DataContexts\BBBoss_SQL.dbml.layout">
       <DependentUpon>BBBoss_SQL.dbml</DependentUpon>
     </None>
   </ItemGroup>
