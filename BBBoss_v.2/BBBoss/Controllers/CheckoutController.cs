@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BBBoss.Models;
+using BBBoss.Controllers;
+using BBBoss.DataContexts;
 using System.Data.SqlClient;
 using System.Data.Linq.SqlClient;
 using LinqToSqlShared;
@@ -12,13 +14,9 @@ namespace BBBoss.Controllers
 {
     public class CheckoutController : Controller
     {
-        //
-        // GET: /Checkout/
-        public string GetConnectionString()
-        {
-            return System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        }
-
+        BBBoss_SQLDataContext dbconnect = new BBBoss_SQLDataContext();
+        
+        
         public ActionResult Phones()
         {
             return View();
@@ -32,6 +30,14 @@ namespace BBBoss.Controllers
             
         //}
 
+        public ActionResult SelectBrand(string _brand)
+        {   
+            CheckoutModels order = new CheckoutModels();
+            order.brand = _brand;
+            return View("Carriers");
+        }
+        
+
         [HttpPost]
         public ActionResult test(string testshtuff)
         {
@@ -40,15 +46,15 @@ namespace BBBoss.Controllers
                 if (ModelState.IsValid)
                 {
                     //Create Connection
-                    BBBoss_SQLDataContext _conn = new BBBoss_SQLDataContext();
+                    
                 
                     //Create db object for insert & fill data
                     test _testshtuff = new test();
                     _testshtuff.shtuff = testshtuff;
      
                     //Close DB
-                    _conn.tests.InsertOnSubmit(_testshtuff);
-                    _conn.SubmitChanges();
+                    dbconnect.tests.InsertOnSubmit(_testshtuff);
+                    dbconnect.SubmitChanges();
                 
                 }
             }
@@ -57,9 +63,6 @@ namespace BBBoss.Controllers
                 
                 throw;
             }
-            
-
-            // If we got this far, something failed, redisplay form
             return View("Carriers");
         }
     }

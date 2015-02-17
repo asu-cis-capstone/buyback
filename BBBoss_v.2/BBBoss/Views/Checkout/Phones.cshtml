@@ -2,27 +2,28 @@
 
 @model BBBoss.Models.CheckoutModels
 
-@using(Html.BeginForm("test", "Checkout", FormMethod.Post))
+@*@using(Html.BeginForm("test", "Checkout", FormMethod.Post))
 {
     <label>Write some shtuff</label>
     @Html.TextBox("testshtuff", string.Empty)
-    <input type="button" class="phone" id="iPhone" value="iPhone"/>
-    <input type="button" class="phone" id="Samsung" value="Samsung"/>
-    <input type="submit" value="test" />                
+    <input type="submit" class="phone" id="iPhone" value="iPhone"/>
+    <input type="submit" class="phone" id="Samsung" value="Samsung"/>
 }
 
            
-	        
+	        *@
 
 
     <head>
         <meta charset="utf-8" />
         <title></title>
+        @Styles.Render("~/Content/BBB_home.css")
          
     </head>
     <body>
-        <div>
-            <img src="~/Images/iPhone-6-wireframe.jpg" id="img_iPhone"/>
+        <div id="phoneselect">
+            <img src="~/Images/iPhone-6-wireframe.jpg" id="img_iPhone1"/>
+            <img src="~/Images/iPhone-6-wireframe.jpg" id="img_iPhone2"/>
         </div>
 
         
