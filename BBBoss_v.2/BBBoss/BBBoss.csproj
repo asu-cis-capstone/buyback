@@ -197,6 +197,7 @@
       <DependentUpon>aspnet-BBBoss-20150127183102.mdf</DependentUpon>
     </Content>
     <Content Include="Content\BBB_header.css" />
+    <Content Include="Content\BBB_home.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\Checkout.css" />

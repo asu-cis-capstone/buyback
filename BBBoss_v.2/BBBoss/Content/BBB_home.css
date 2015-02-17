@@ -1,0 +1,27 @@
+﻿body
+{
+}
+
+#img_iPhone1 {
+    height: 300px;
+    display: inline-block;
+    padding: 10px;
+    margin-left:33%;
+
+
+}
+
+#img_iPhone2 {
+    height: 300px;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+    #img_iPhone1:hover {
+        border: 3px solid #ce0a0a;
+    }
+
+        #img_iPhone2:hover {
+        border: 3px solid #ce0a0a;
+    }
