@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BBBoss
+namespace BBBoss.DataContexts
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -47,8 +47,8 @@ namespace BBBoss
     partial void Deletetest(test instance);
     #endregion
 		
-		public BBBoss_SQLDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["BBBossConnectionString"].ConnectionString, mappingSource)
+		public BBBoss_SQLDataContext() :
+                base(global::System.Configuration.ConfigurationManager.ConnectionStrings["BBBossConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

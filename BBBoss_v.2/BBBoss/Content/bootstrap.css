@@ -3899,8 +3899,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   max-width: none;
 }
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  
 }
+
+.navbar .logo-desktop a{
+    display: inline-block;
+    margin-left: 13px;
+    margin-top: 9px;
+    display: none;
+    position: absolute;
+    left: 0px;
+}
+
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
@@ -4034,6 +4044,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a:focus {
     border-bottom-color: #fff;
   }
+}.navbar-fixed-top,
+.navbar-fixed-bottom {
+ text-align: center;
+height: 56px;
+border-bottom: 1px solid #DDD;
+border-radius: 0px;
+background: none repeat scroll 0% 0% #FFF;
+float: none;
+margin: 0px;
+ position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+
 }
 .tab-content > .tab-pane {
   display: none;
@@ -4137,10 +4162,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
+ text-align: center;
+height: 56px;
+border-bottom: 1px solid #DDD;
+border-radius: 0px;
+background: none repeat scroll 0% 0% #FFF;
+float: none;
+margin: 0px;
+ position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
+
+
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
@@ -6562,5 +6596,15 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+    transform: translate3d(0px, 0px, 0px);
 }
 /*# sourceMappingURL=bootstrap.css.map */

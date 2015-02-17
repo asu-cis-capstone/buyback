@@ -20,7 +20,7 @@ The referral program will be modeled after several recently successful programs 
 ###How To Install
  1. Install Visual Studio, any version with ASP.NET framework (free through ASU Dreamspark)
  2. Install SQL Server (free through ASU Dreamspark)
- 3. Download folder "BBBoss" to your computer
+ 3. Download folder "BBBoss_v.2" to your computer
  4. Open your copy of "BBBoss.sln" in Visual Stuido (this file can be found within folder BBBoss)
  5. Open the folder "SQLServer" within the "BBBoss" folder and run the file, "BuyBackBoss_Tables.sql" in SQL Server
 
