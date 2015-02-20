@@ -2,11 +2,17 @@
 {
 }
 
+#title {
+    text-align: center;
+    font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+}
 #img_iPhone1 {
     height: 300px;
     display: inline-block;
     padding: 10px;
-    margin-left:33%;
+    margin-left: 25%;
 
 
 }

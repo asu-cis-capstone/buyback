@@ -1,8 +1,14 @@
-﻿header,footer {
+﻿body {
+    width:				1000px;
+	margin:				auto;
+	background-color:	#ffffff;
+}
+header,footer {
     font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 80%;
     margin-bottom: 100px;
+
 }
 
 footer {
@@ -18,7 +24,8 @@ header img {
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-
+width: 1000px;
+margin: auto;
 text-align: center;
 height: 60px;
 border-bottom: 1px solid #DDD;
@@ -34,6 +41,7 @@ z-index: 1030;
 
 .nav-tabs > li {
   float: left;
+  position: absolute;
 
 }
 .nav-tabs > li > a {
