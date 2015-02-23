@@ -19,6 +19,8 @@ header img {
 .navbar-fixed-top,
 .navbar-fixed-bottom {
 
+width: 1000px;
+margin: auto;
 text-align: center;
 height: 60px;
 border-bottom: 1px solid #DDD;

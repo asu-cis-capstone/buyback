@@ -1,24 +1,52 @@
-﻿
-#iphone {
+﻿body {
+	width:				1000px;
+	margin:				auto;
+	background-color:	#ffffff;
+	}
+
+#title {
+    text-align: center;
+    font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+phoneselect {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+#img_iPhone1 {
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-left: 27%;
+}
+
+#img_iPhone2 {
     height: 300px;
     display: inline-block;
     padding: 10px;
-    margin-left:33%;
-
-
-}
-
-#samsung {
-    height: 300px;
-    display: inline-block;
-    padding: 10px;
+    text-align: center;
 
 }
 
-#iphone:hover {
-	border: 3px solid #ce0a0a;
+    #img_iPhone1:hover {
+        border: 3px solid #ce0a0a;
+    }
+
+        #img_iPhone2:hover {
+        border: 3px solid #ce0a0a;
+    }
+
+#caption .iphone {
+    padding-left: 355px;
+    font-size: large;
 }
 
-#samsung:hover {
-	border: 3px solid #ce0a0a;
+#caption .samsung {
+    padding-left: 175px;
+    font-size: large;
 }
