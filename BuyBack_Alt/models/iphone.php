@@ -8,6 +8,8 @@
 
 	<!-- Link tag for CSS -->
 	<link type="text/css" rel="stylesheet" href="../content/BBB_home.css" />
+	<link type="text/css" rel="stylesheet" href="../content/BBB_header.css" />
+	<link type="text/css" rel="stylesheet" href="../content/BBB_iphonemodel.css" />
 
 	<!-- JavaScript Tags -->
 
@@ -23,7 +25,7 @@
             <div class="content-wrapper">
                 <div>
                     <nav class="navbar-fixed-top">
-                            <a class="logo-desktop" href="#"><img src="images/Buyback-Boss-Logo.png" alt="Sell and Buy Used iPhone" /></a> 
+                            <a class="logo-desktop" href="#"><img src="../images/Buyback-Boss-Logo.png" alt="Sell and Buy Used iPhone" /></a> 
                         <ul class="nav nav-tabs" id="menu">
                             <li><a href="how/">HOW IT WORKS</a></li>
                             <li><a href="reviews/">PRESS & REVIEWS</a></li>
@@ -38,19 +40,32 @@
 			</div>	
         </header>
 		
+	<body>
+		<div class="progress">
+		<div class="progress-bar progress-bar-striped active" role="progressbar"
+			aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+			25% complete!
+		</div>
+		</div>
+	
+		<div id="phoneImage">
+            <img src="../images/iPhone-6-wireframe.jpg" id="small_phone_left"/>
+		</div>
+		
 		<!-- Options and Selections -->
-		<div id="option-container">
-			<div>
-				
-			</div>
 			<div id="phones">
 				<p>
-					<a href="models/samsung.php" ><img src="images/iPhone-6-wireframe.jpg" id="iphone" /></a>
-					<a href="models/iphone.php" ><img src="images/iPhone-6-wireframe.jpg" id="samsung"/></a>
-				</p>
-				
+					<form action="../options/phoneops1.php">
+					<input type="submit" id="iPhone_Submit" value="iPhone 4">
+					<input type="submit" id="iPhone_Submit" value="iPhone 4s">
+					<input type="submit" id="iPhone_Submit" value="iPhone 5">
+					<input type="submit" id="iPhone_Submit" value="iPhone 5s">
+					<input type="submit" id="iPhone_Submit" value="iPhone 5c">
+					<input type="submit" id="iPhone_Submit" value="iPhone 6">
+					<input type="submit" id="iPhone_Submit" value="iPhone 6 Plus">
+					</form>				
+				</p>		
 			</div>
-		</div>
 		
 		<!-- Footer and Copyright -->
         <footer>
