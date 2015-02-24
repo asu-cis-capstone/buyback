@@ -43,7 +43,7 @@
 				<p>Thanks for choosing us! We greatly appreciate it.</p>
 			</div>
 			<div>
-				<button type="button" id="return" onclick="window.navigate('../index.html')">
+				<button type="button" id="return" onclick="location.href = '../index.html'">
 					HOME
 				</button>
 			</div>
