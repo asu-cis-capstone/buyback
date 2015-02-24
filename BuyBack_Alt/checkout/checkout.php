@@ -59,12 +59,13 @@
 			<div class="sellingpic">
 				<img src="../images/youareselling.png" id="You_Are_Selling"/>
 			</div>
-		</div>
 		<!--Add Another Device Button...?-->
 		<div id="addanother">
 			<button type="add" class="add_btn">Add Another Device</button>
 		</div>
-			
+		</div>
+
+		<div id="form">
 			<!-- FORM -->
 		<form class="form-inline">	
 			<!-- Choose Payment Method -->
@@ -123,9 +124,9 @@
 			<div class="form-group">
 				<label for="howhear">How did you hear about Buyback Boss?</label>
 				<input type="text" class="form-control" id="howhear">
-			<button type="submit" class="btn btn-default">Submit Information</button>
+			<button type="button" class="btn btn-default" onclick="location.href = 'confirm.php' ">Submit Information</button>
 		</form>
-					
+		</div>		
         <footer>
             <div>
                 <div class="float-left">
