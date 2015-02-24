@@ -1,0 +1,47 @@
+#message-container {
+	font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+#message {
+	text-align: center;
+}
+
+#return {
+	color: #fff;
+	background-color: #ce0a0a;
+	border-color: #ce0a0a;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	  -ms-touch-action: manipulation;
+		  touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	  -ms-user-select: none;
+		  user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-family: Aharoni,Helvetica,sans-serif;
+	margin-left:	49%;
+}
+
+#return:hover,
+#return:focus,
+#return.focus,
+#return:active,
+#return.active,
+.open > .dropdown-toggle#return {
+  color: #fff;
+  background-color: #b00000;
+  border-color:#b00000;
+}
