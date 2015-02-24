@@ -71,14 +71,14 @@
                 <img src="../images/iPhone-6-wireframe.jpg" id="img_iPhone_checkout"/>
             
         
-        <div class = "network">
+        <span class = "network">
             What condition is the device in?
             <span class="help">
                 <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with condition.">
                 ?
                 </button>
             </span>
-            <div class="btn-group" data-toggle="buttons">
+            <span class="btn-group" data-toggle="buttons">
                 <label class = "btn btn-primary">
                     <input type = "radio" name="condition" id="mint">MINT
                 </label>
@@ -94,9 +94,9 @@
                 <label class="btn btn-primary">
                     <input type="radio" name="condition" id="broken">BROKEN
                 </label>
-            </div>
-           </div>
-
+            </span>
+        </span>
+		   
            <span class="offerstatement">
                Your offer is:
            </span>
@@ -136,7 +136,6 @@
            <span class="conditionIndicator">
 
            </span>
-
         </div>
 
         

@@ -23,8 +23,8 @@ body
 }
 
 #img_iPhone_checkout {
-    width: 83%;
-    height: 83%;
+    width: 20%;
+    height: 20%;
 }
 
 #img_iPhone1:hover {
@@ -36,7 +36,7 @@ body
 }
 
 #phoneCheckout {
-    width:35%;
+	/*width: 35%;*/
     font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
     font-size: 180%;
@@ -827,6 +827,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .progress {
   height: 20px;
+  width: 71%;
+  margin: auto;
   margin-bottom: 20px;
   overflow: hidden;
   background-color: #f5f5f5;
