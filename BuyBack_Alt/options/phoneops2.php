@@ -6,8 +6,10 @@
         <link href="../images/Buyback-Boss-Logo.jpg" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         <link href="../content/BBB_phoneops2.css" rel="stylesheet"/>
-
-        <script src="../scripts/modernizr-2.5.3.js"></script>
+		<link href="../content/BBB_header.css" rel="stylesheet"/>
+		
+        <script src="../scripts/jquery-2.1.3.js"></script>
+		<script src="../scripts/bootstrap.js"></script>
 
     </head>
     <body>
@@ -118,7 +120,7 @@
            </span>
 
            <span class="checkoutButton">
-               <button class="btn btn-default round" type="submit" value="checkout">Checkout</button>
+               <button class="btn btn-default round" type="submit" value="checkout" onclick="location.href = '../checkout/checkout.php' ">Checkout</button>
            </span>
 
            <span class="offerAmount">
@@ -157,7 +159,6 @@
             </div>
         </footer>
 
-        <script src="/Scripts/jquery-2.1.3.js"></script>
 
         
         

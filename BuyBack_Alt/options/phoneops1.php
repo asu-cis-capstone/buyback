@@ -41,7 +41,8 @@
 	</div>
         <div id="phoneCheckout">
             <img src="../images/iPhone-6-wireframe.jpg" id="img_iPhone_checkout"/>
-
+		
+		<div id="contentContainer">
         <div class = "network">
             What network are you on?
             <span class="help">
@@ -77,23 +78,28 @@
              
             <div class="btn-group" data-toggle="buttons">
                  <label class="btn btn-primary active">
-                 <input type="radio" name="carrier" id="8gb" autocomplete="off">8GB
+                 <input type="radio" name="size" id="8gb" autocomplete="off">8GB
                  </label>
                  <label class="btn btn-primary">
-                 <input type="radio" name="carrier" id="16gb" autocomplete="off">16GB
+                 <input type="radio" name="size" id="16gb" autocomplete="off">16GB
                  </label>
                  <label class="btn btn-primary">
-                 <input type="radio" name="carrier" id="32gb" autocomplete="off">32GB
+                 <input type="radio" name="size" id="32gb" autocomplete="off">32GB
                  </label>
                  <label class="btn btn-primary">
-                 <input type="radio" name="carrier" id="64gb" autocomplete="off">64GB
+                 <input type="radio" name="size" id="64gb" autocomplete="off">64GB
                  </label>
                  <label class="btn btn-primary">
-                 <input type="radio" name="carrier" id="128gb" autocomplete="off">128GB
+                 <input type="radio" name="size" id="128gb" autocomplete="off">128GB
                  </label>
                    </div>
                  </div>
-        
+        </div>
+		
+		 <span class="checkoutButton">
+               <button class="btn btn-primary" type="submit" value="checkout" onclick="location.href = 'phoneops2.php' ">Next</button>
+         </span>
+		
         </div> 
     </body>
        
