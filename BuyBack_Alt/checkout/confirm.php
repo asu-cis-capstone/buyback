@@ -22,6 +22,23 @@
 	</head>
 	
 	<body>
+	
+	<!-- Modal -->
+<div class="modal fade" id="refer">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Join our referral program!</h4>
+      </div>
+      <div class="modal-body">
+        <img src="../images/referraldummy.png" alt="refer a friend!" id="modalimg"/>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+			
+	<!-- Header -->		
 	    <header>
             <div class="content-wrapper">
                 <div>
@@ -47,14 +64,7 @@
 				<p>Thanks for choosing us! We greatly appreciate it.</p>
 			</div>
 			
-			<div class="modal hide fade" id="refer">
-			  <div class="modal-header">
-				<a class="close" data-dismiss="modal">×</a>
-			  </div>
-			  <div class="modal-body">
-				<img src="../images/referraldummy.png" alt="dummy">
-			  </div>
-			</div>
+
 			<div>
 				<button type="button" id="return" onclick="location.href = '../index.html'">
 					HOME
@@ -68,5 +78,7 @@
                 </div>
             </div>
         </footer>-->
+		
+
 	</body>
 </html>

@@ -118,12 +118,12 @@
 				
 				<br/>
 				<label for="refcode">Referral or Coupon Code</label> 
-				<input type="text" class="form-control" id="refcode"><span class="validate"><button class="btn btn-success" type="submit" value="validate" id="validate" onclick="pricechange()">Validate Code</button></span>
+				<input type="text" class="form-control" id="refcode"><span class="validate"><button class="btn btn-success" type="submit" value="validate" id="validate" onclick="pricechange();return false;">Validate Code</button></span>
 				<label for="howhear">How did you hear about Buyback Boss?</label>
 				<input type="text" class="form-control" id="howhear">
 			</div>
 			<span class="checkoutButton">
-               <button class="btn btn-primary" type="submit" value="checkout" onclick="location.href ='confirm.php'">Submit</button>
+               <button class="btn btn-primary" type="button" value="checkout" onclick="location.href ='confirm.php'">Submit</button>
          </span>
 		</form>
 		</div></div>

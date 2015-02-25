@@ -52,19 +52,19 @@
         
 		<div class="btn-group">
                 <label class = "btn btn-primary">
-					<input type = "radio" name="condition" id="mint" value="mint" onfocus="mint()" onclick="mint()"/>MINT
+					<input type = "radio" name="condition" id="mint" value="mint" onfocus="mint(); pricemint();" onclick="mint(); pricemint();"/>MINT
                 </label>
                 <label class="btn btn-primary">
-                    <input type="radio" name="condtion" id="good" value="good" onfocus="good()" onclick="good()"/>GOOD
+                    <input type="radio" name="condtion" id="good" value="good" onfocus="good(); pricegood();" onclick="good(); pricegood();"/>GOOD
                 </label>
                 <label class="btn btn-primary">
-                    <input type="radio" name="condition" id="cracked" value="cracked" onfocus="cracked()" onclick="cracked()"/>CRACKED
+                    <input type="radio" name="condition" id="cracked" value="cracked" onfocus="cracked(); pricecracked();" onclick="cracked(); pricecracked();"/>CRACKED
                 </label>
                 <label class="btn btn-primary">
-                    <input type="radio" name="condition" id="damaged" value="damaged" onfocus="damaged()" onclick="damaged()"/>DAMAGED
+                    <input type="radio" name="condition" id="damaged" value="damaged" onfocus="damaged(); pricedamaged();" onclick="damaged(); pricedamaged();"/>DAMAGED
                 </label>
                 <label class="btn btn-primary">
-                    <input type="radio" name="condition" id="broken" value="broken" onfocus="broken()" onclick="broken()"/>BROKEN
+                    <input type="radio" name="condition" id="broken" value="broken" onfocus="broken(); pricebroken();" onclick="broken(); pricebroken();"/>BROKEN
                 </label>
             </div>
         </div>
@@ -87,9 +87,8 @@
 		   <span class="offerstatement">
                Your offer is:
            </span>
-		   <span class="offerAmount">
-               <br/>$355
-           </span>
+		   <div id="offerAmount">
+           </div>
 
            <span class="whybuyback">
                <br/><br/><br/>Why Buyback Boss?
