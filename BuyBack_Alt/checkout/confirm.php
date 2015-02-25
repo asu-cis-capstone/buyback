@@ -9,9 +9,13 @@
 	<!-- Link tag for CSS -->
 	<link type="text/css" rel="stylesheet" href="../content/BBB_header.css" />
 	<link type="text/css" rel="stylesheet" href="../content/BBB_confirm.css" />
+	
 
 	<!-- JavaScript Tags -->
-
+	    <script src="../scripts/jquery-2.1.3.js" type="text/javascript"></script>
+		<script src="../scripts/bootstrap.js" type="text/javascript"></script>
+		<script src="../scripts/main.js" type="text/javascript"></script>
+	
 	<!-- Web Page Title -->
 	<title>BuyBackBoss Checkout Confirm</title>
 
@@ -42,18 +46,27 @@
 				<p>An email has been sent to the address with your receipt and confirmation</p>
 				<p>Thanks for choosing us! We greatly appreciate it.</p>
 			</div>
+			
+			<div class="modal hide fade" id="refer">
+			  <div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+			  </div>
+			  <div class="modal-body">
+				<img src="../images/referraldummy.png" alt="dummy">
+			  </div>
+			</div>
 			<div>
 				<button type="button" id="return" onclick="location.href = '../index.html'">
 					HOME
 				</button>
 			</div>
 		</div>
-        <footer>
+       <!-- <footer>
             <div>
                 <div class="float-left">
                     <p>&copy; 2015 - Buyback Boss</p>
                 </div>
             </div>
-        </footer>
+        </footer>-->
 	</body>
 </html>

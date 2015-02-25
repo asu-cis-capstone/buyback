@@ -1,7 +1,16 @@
   $(function(){
     $('button').popover()
     });
+	
+	$(window).load(function(){
+        $('#refer').modal('show');
+    });
 
+function pricechange()
+{
+	document.getElementById("offerAmount").innerHTML=
+	"$365";
+}
 
 function mint()
 {
