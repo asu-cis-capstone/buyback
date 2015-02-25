@@ -1,7 +1,7 @@
 body
 {
 width: 75%;
-padding-left: 12.5%;
+margin-left: 12.5%;
 }
 
 #title {
@@ -25,7 +25,7 @@ padding-left: 12.5%;
 
 #img_iPhone_checkout {
     height: 400px;
-    display: inline-block;
+    float: left;
 }
 
 #img_iPhone1:hover {
@@ -44,10 +44,10 @@ padding-left: 12.5%;
 }
 
 #contentContainer{
-	float: right;
-	width: 50%;
-	padding-top: 3%;
-	padding-right: 21.5%;
+	float: left;
+	width: 60%;
+	margin-top: 3%;
+
 }
 
 #phoneCheckout .btn-primary{
@@ -73,7 +73,6 @@ text-align: center;
 
 
 #phoneCheckout .checkoutButton button{
-
     color: #fff;
 	font-weight: bold;
 	font-family: aharoni, arial, sans-serif;
@@ -88,9 +87,9 @@ text-align: center;
 }
 
 #phoneCheckout .checkoutButton {
-	float: right;
-	margin-top: -80px;
-	padding-right: 10%;
+	float: left;
+	margin-top: 2.5%;
+	padding-left: 40%;
 }
 
 .btn-group > .btn,

@@ -8,12 +8,13 @@
 		<link href="../content/BBB_phoneops1.css" rel="stylesheet"/>
         <link href="../content/BBB_header.css" rel="stylesheet"/>
 
-        <script src="../scripts/jquery-2.1.3.js"></script>
-		<script src="../scripts/bootstrap.js"></script>
-
-    </head>
-    <body>
-        <header>
+        <script src="../scripts/jquery-2.1.3.js" type="text/javascript"></script>
+		<script src="../scripts/bootstrap.js" type="text/javascript"></script>
+		<script src="../scripts/main.js" type="text/javascript"></script>
+	</head>
+   
+   <body>
+   <header>
             <div class="content-wrapper">
                 <div>
                     <nav class="navbar-fixed-top">
@@ -46,7 +47,7 @@
         <div class = "network">
             What network are you on?
             <span class="help">
-                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
+                <button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
                ?
             </button></span>
             <div class="btn-group" data-toggle="buttons">
@@ -72,7 +73,7 @@
              <div class = "storage">
                 What is the storage capacity?
                  <span class="help">
-                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Capacity can be found in Settings > General > About.">
                ?
             </button></span>
              
@@ -102,20 +103,14 @@
 		
         </div> 
     </body>
-       
 
-                
-
-
-            </div>           
-        </div>
-        <footer>
+<!--        <footer>
             <div class="content-wrapper">
                 <div class="float-left">
                     <p>&copy; 2015 - Buyback Boss</p>
                 </div>
             </div>
-        </footer>
+        </footer>-->
 
         
         

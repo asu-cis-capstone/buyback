@@ -1,149 +1,122 @@
 body
 {
-}
+width: 75%;
+padding-left: 12.5%;
 
-#title {
-    text-align: center;
-    font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 200%;
-}
-
-#img_iPhone1 {
-    height: 300px;
-    display: inline-block;
-    padding: 10px;
-    margin-left: 25%;
-}
-
-#img_iPhone2 {
-    height: 300px;
-    display: inline-block;
-    padding: 10px;
 }
 
 #img_iPhone_checkout {
-    width: 20%;
-    height: 20%;
+    height: 400px;
+    float: left;
 }
 
-#img_iPhone1:hover {
-    border: 3px solid #ce0a0a;
-}
-
-#img_iPhone2:hover {
-    border: 3px solid #ce0a0a;
-}
 
 #phoneCheckout {
-	/*width: 35%;*/
-    font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width:100%;
+    font-family: Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
     font-size: 180%;
 }
 
-.network {
-    position: absolute;
-    top: 20%;
+#contentContainer{
+	float: left;
+	width: 50%;
+	margin-top: 3%;
+
 }
 
-.offerstatement {
-    position: absolute;
-    top: 18%;
-    left: 72%;
+#phoneCheckout .btn-primary{
+border-radius: 2px;
+height: 80px;
+width: 80px;
+}
+
+
+
+#phoneCheckout .help .btn-default {
+    height: 20px;
+    width: 20px;
+    border-radius: 30%;
+    font-size: 30%;
+
+}
+
+#phoneCheckout .network .btn-primary {
+font-size: 50%;
+font-weight: bold;
+text-align: center;
+font-family: arial, sans-serif;
+}
+
+#phoneCheckout .checkoutButton button{
+    color: #fff;
+	font-weight: bold;
+	font-family: aharoni, arial, sans-serif;
+	background-color:#ce0a0a;
+	position: relative;
+	float: left;
+	margin: 15px;
+	margin-left: 55%;
+	width: 120px;
+	height: 40px;
+	border: none;
+	border-radius: 2px;
+
+}
+
+#phoneCheckout .checkoutButton {
+	float: left;
+	margin-top: 2.5%;
+	padding-left: 40%;
+}
+
+#messages { 
+	font-size: 80%;
+	float: left;
+	width: 45%;
+	font-weight: bold;
+	color: black;
+	border-top: thin solid gray;
+	margin: 10px;
+	padding: 10px;
+}
+
+.bullet{
+	font-size: 65%;
+	font-family: arial, sans-serif;
+	font-weight: normal;
+	font-style: italic;
+}
+	
+#offercontainer{
+	z-index: 10000;
+	border: thin solid lightgray;
+	width: 20%;
+	float: right;
+	padding: 5px;
+	text-align: center;
+}
+
+
+
+.offerAmount {
+    font-size: 200%;
+	color: #ce0a0a;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	
 }
 
 .whybuyback {
-    position: absolute;
-    top: 37%;
-    left: 72%;
-    font-size: 75%;
+    font-size: 65%;
 }
 
-.whybuybackpoint1 {
-    position: absolute;
-    top: 42%;
-    left: 73%;
-    font-size: 60%;
-}
-
-.whybuybackpoint2 {
-    position: absolute;
-    top: 46%;
-    left: 73%;
-    font-size: 60%;
-}
-
-.whybuybackpoint3 {
-    position: absolute;
-    top: 50%;
-    left: 73%;
-    font-size: 60%;
-}
-
-.offerAmount {
-    position: absolute;
-    top: 24%;
-    left: 74%;
-    font-size: 200%;
-}
-
-.conditionDescription {
-    position: absolute;
-    top: 44%;
-    left: 35%;
-    border-top: 2px solid #000;
-}
-
-.conditionIndicator {
-    position: absolute;
-    top: 42.3%;
-    left: 42%;
-    width: 0; 
-	height: 0; 
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-bottom: 15px solid black;
+.whybuybackpoints {
+    font-size: 45%;
+	
 }
 
 
-.storage {
-    position: absolute;
-    top: 40%;
-}
-
-.round {
-    border-radius: 24px;
-}
-
-#phoneCheckout .checkoutButton .btn-default {
-    position: absolute;
-    top: 60%;
-    left: 74%;
-    height: 7%;
-    width: 7%;
-    color: #fff;
-    background-color:#ce0a0a;
-}
-
-#phoneCheckout .help .btn-default {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    font-size: 50%;
-}
-
-#phoneCheckout .btn-default {
-    height: 70px;
-    width: 75px;
-    margin: 10px;
-    margin-top: -10px;
-
-}
-
-#phoneCheckout .btn-default img {
-        height: 35px;
-    }
 
 .btn-default {
   color: #333;
@@ -190,6 +163,130 @@ fieldset[disabled] .btn-default.active {
   color: #fff;
   background-color: #333;
 }
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: normal;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.popover.top {
+  margin-top: -10px;
+}
+.popover.right {
+  margin-left: 10px;
+}
+.popover.bottom {
+  margin-top: 10px;
+}
+.popover.left {
+  margin-left: -10px;
+}
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+.popover-content {
+  padding: 9px 14px;
+}
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.popover > .arrow {
+  border-width: 11px;
+}
+.popover > .arrow:after {
+  content: "";
+  border-width: 10px;
+}
+.popover.top > .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, .25);
+  border-bottom-width: 0;
+}
+.popover.top > .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-color: #fff;
+  border-bottom-width: 0;
+}
+.popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, .25);
+  border-left-width: 0;
+}
+.popover.right > .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: " ";
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+.popover.bottom > .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, .25);
+}
+.popover.bottom > .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+.popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, .25);
+}
+.popover.left > .arrow:after {
+  right: 1px;
+  bottom: -10px;
+  content: " ";
+  border-right-width: 0;
+  border-left-color: #fff;
+}
+
 
 .modal-open {
   overflow: hidden;
@@ -423,40 +520,7 @@ fieldset[disabled] .btn-default.active {
   border-bottom-color: #000;
 }
 
-.network {
-    position: absolute;
-    top: 25%;
-    left: 34%;
-    width: 100%;
-}
 
-.storage {
-    position: absolute;
-    top: 50%;
-    left: 34%;
-}
-
-
-#phoneCheckout .help .btn-default {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    font-size: 50%;
-}
-
-#phoneCheckout .btn-default {
-    height: 70px;
-    width: 70px;
-    margin: 10px;
-    margin-top: -10px;
-
-}
-
-
-
-#phoneCheckout .btn {
-border-radius: 5px;
-}
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -827,7 +891,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .progress {
   height: 20px;
-  width: 71%;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   overflow: hidden;
