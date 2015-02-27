@@ -32,10 +32,10 @@
                     <nav class="navbar-fixed-top">
                             <a class="logo-desktop" href="#"><img src="../images/Buyback-Boss-Logo.png" alt="Sell and Buy Used iPhone" /></a> 
                         <ul class="nav nav-tabs" id="menu">
-                            <li><a href="how/">HOW IT WORKS</a></li>
-                            <li><a href="reviews/">PRESS & REVIEWS</a></li>
-                            <li><a href="support/">SUPPORT</a></li>
-                            <li><a href="blog/">BLOG</a></li>
+                            <li><a href="../how/">HOW IT WORKS</a></li>
+                            <li><a href="../reviews/">PRESS & REVIEWS</a></li>
+                            <li><a href="../support/">SUPPORT</a></li>
+                            <li><a href="../blog/">BLOG</a></li>
                         </ul>
                         <button type="button" class="cart" onclick="">
                             CART
@@ -64,6 +64,7 @@
 		<div id="title">
 			Checkout
 		</div>
+		
 		<div id="form">
 			<!-- FORM -->
 		<form class="form-inline">	
@@ -77,7 +78,8 @@
                  <label class="btn btn-primary">
                  <input type="radio" name="payment" id="check"><img src="../images/check.png" alt="check" /><span class="btntext">Check</span>
                  </label>
-			</div></div>
+				</div>
+			</div>
 			
 			<!-- Choose Shipping Method -->
 			<div class="shippingmethod">
