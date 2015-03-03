@@ -1,52 +1,64 @@
-﻿body {
-	width:				1000px;
-	margin:				auto;
-	background-color:	#ffffff;
-	}
-
-#title {
-    text-align: center;
-    font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 200%;
+﻿#phonecheckout{
+	position: relative;
+	width: 100%;
 }
 
-phoneselect {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-}
+#phoneselect{
+	width: 100%;
+	margin-left:33%;
 
+}
 #img_iPhone1 {
     height: 300px;
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-    margin-left: 27%;
 }
 
 #img_iPhone2 {
     height: 300px;
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-
 }
 
-    #img_iPhone1:hover {
+#img_iPhone1:hover {
         border: 3px solid #ce0a0a;
     }
 
-        #img_iPhone2:hover {
+#img_iPhone2:hover {
         border: 3px solid #ce0a0a;
     }
 
+#caption{
+	width: 100%;}
+	
 #caption .iphone {
-    padding-left: 355px;
+	margin-left: 8%;
     font-size: large;
+	margin-right: 130px;
 }
 
-#caption .samsung {
-    padding-left: 175px;
-    font-size: large;
+#caption .samsung{
+	font-size: large;
+}
+
+h1{
+	font-size: 500%;
+	font-family: calibri, arial, sans-serif;
+	color: #ce0a0a;
+	
+}
+
+.page-header{
+	border: none;
+	text-align: center;
+}
+
+body{
+	background-image: url("../images/bg_body_home.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#how{
+	margin-top: 90px;
+	border: thin solid gray;
+	padding: 50px;
+
+	
 }
