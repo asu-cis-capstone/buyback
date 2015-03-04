@@ -9,15 +9,16 @@
    
 
     <title>Buyback Boss</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../content/bootstrap.min.css" rel="stylesheet">
+	
 	<!--Fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Lobster|Oswald:400,700|Bree+Serif|Roboto+Condensed:700italic,400,300|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  
-  <!-- Bootstrap core CSS -->
-    <link href="content/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="content/sticky-footer-navbar.css" rel="stylesheet">
-	<link href="content/BBB_home.css" rel="stylesheet">
+    <link href="../content/sticky-footer-navbar.css" rel="stylesheet">
+	<link href="../content/BBB_models.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,11 +43,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img id="navlogo" src="images/Buyback-Boss-Logo.png"  alt="logo"></a>
+          <a class="navbar-brand" href="#"><img id="navlogo" src="../images/Buyback-Boss-Logo.png"  alt="logo"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#how">HOW IT WORKS</a></li>
+			<li><a href="../index.php">HOME</a></li>
+            <li><a href="../index.php#home">HOW IT WORKS</a></li>
             <li><a href="#press">PRESS & REVIEWS</a></li>
             <li class="SUPPORT">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SUPPORT<span class="caret"></span></a>
@@ -68,55 +70,51 @@
 
     <!-- Begin page content -->
     <div class="container">
-	<div id="main">
-	 <div class="page-header">
-        <h1>SELL MY...</h1>
+	  <div class="page-header">
+	  		<div id="steps">
+				<div class="stepwizard">
+					<div class="stepwizard-row">
+						<div class="stepwizard-step">
+							<button type="button" class="btn btn-default btn-circle" onclick="location.href='../index.php'">1</button>
+							<p>Model</p>
+						</div>
+						<div class="stepwizard-step">
+							<button type="button" class="btn btn-primary btn-circle" onclick="#" disabled="disabled">2</button>
+							<p>Options</p>
+						</div>
+						<div class="stepwizard-step">
+							<button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
+							<p>Quote</p>
+						</div> 
+						<div class="stepwizard-step">
+							<button type="button" class="btn btn-default btn-circle" disabled="disabled">4</button>
+							<p>Checkout</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        <h1>Which model iPhone do you have? </h1>
       </div>
-	  <div id="phoneselect">
-        <a href="models/models.php"><img src="images/iphone.png" id="img_iPhone1"/></a>
-        <a href="models/models.php"><img src="images/samsung.png" id="img_iPhone2"/></a>
+		<div id="phoneImage">
+            <img src="../images/iPhone-6-wireframe.jpg" id="small_phone_left"/>
 		</div>
-		</div>
-		<div id="how">
-		<div class="row clearfix">
-		 <h1>HOW IT WORKS</h1>
-		<div class="col-md-4 column">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		<div class="col-md-4 column">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		<div class="col-md-4 column">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-	</div>
-	</div>
+		
+		<!-- Options and Selections -->
+			<div id="phones">
+				<p>
+					<form action="../options/phoneops1.php">
+					<input type="submit" id="iPhone_Submit" value="iPhone 4">
+					<input type="submit" id="iPhone_Submit" value="iPhone 4s">
+					<input type="submit" id="iPhone_Submit" value="iPhone 5">
+					<input type="submit" id="iPhone_Submit" value="iPhone 5s">
+					<input type="submit" id="iPhone_Submit" value="iPhone 5c">
+					<input type="submit" id="iPhone_Submit" value="iPhone 6">
+					<input type="submit" id="iPhone_Submit" value="iPhone 6 Plus">
+					</form>				
+				</p>		
+			</div>
 </div>
-    </div>
+
 
     <footer class="footer">
       <div class="container">

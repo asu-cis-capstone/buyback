@@ -14,34 +14,47 @@
 
 #img_iPhone2 {
     height: 300px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #img_iPhone1:hover {
-        border: 3px solid #ce0a0a;
+        border: 3px solid white;
+		border-radius: 5px;
     }
 
 #img_iPhone2:hover {
-        border: 3px solid #ce0a0a;
+        border: 3px solid white;
+		border-radius: 5px;
     }
 
-#caption{
-	width: 100%;}
-	
-#caption .iphone {
-	margin-left: 8%;
-    font-size: large;
-	margin-right: 130px;
-}
-
-#caption .samsung{
-	font-size: large;
-}
 
 h1{
 	font-size: 500%;
-	font-family: calibri, arial, sans-serif;
-	color: #ce0a0a;
+	font-family: "Oswald",sans serif;
+	color: white;
 	
+
+}
+
+#main{
+		background-color: #ce0a0a;
+		margin-left: -10%;
+		margin-right: -10%;
+		z-index: -1;
+		padding-bottom: 30px;
+		
+}
+
+h2{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#how h1{
+	color: 	#ce0a0a;
+}
+#how p{
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .page-header{
@@ -49,11 +62,6 @@ h1{
 	text-align: center;
 }
 
-body{
-	background-image: url("../images/bg_body_home.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
 
 #how{
 	margin-top: 90px;
