@@ -73,8 +73,8 @@
         <h1>SELL MY...</h1>
       </div>
 	  <div id="phoneselect">
-        <a href="models/models.php"><img src="images/iphone.png" id="img_iPhone1"/></a>
-        <a href="models/models.php"><img src="images/samsung.png" id="img_iPhone2"/></a>
+        <a href="models/models.php?brand=iPhone" onclick="post"><img src="images/iphone.png" id="img_iPhone1"/></a>
+        <a href="models/models.php?brand=samsung" onclick="post"><img src="images/samsung.png" id="img_iPhone2"/></a>
 		</div>
 		</div>
 		<div id="how">

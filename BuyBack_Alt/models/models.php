@@ -1,4 +1,22 @@
 <!DOCTYPE html>
+
+<?php
+
+	$brand = $_GET['brand'];
+
+	include('../connection/localconnection.php');
+	
+	$query = "SELECT DISTINCT Model FROM models WHERE brand = '$brand'";
+	$result = $dbc->query($query);
+ 
+	if(!$result){
+		echo "DB error. Could not query database\n";
+		echo 'MySQL error: ' . mysql_error();
+		exit;
+	}
+	
+?>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -103,13 +121,18 @@
 			<div id="phones">
 				<p>
 					<form action="../options/phoneops1.php">
-					<input type="submit" id="iPhone_Submit" value="iPhone 4">
-					<input type="submit" id="iPhone_Submit" value="iPhone 4s">
-					<input type="submit" id="iPhone_Submit" value="iPhone 5">
-					<input type="submit" id="iPhone_Submit" value="iPhone 5s">
-					<input type="submit" id="iPhone_Submit" value="iPhone 5c">
-					<input type="submit" id="iPhone_Submit" value="iPhone 6">
-					<input type="submit" id="iPhone_Submit" value="iPhone 6 Plus">
+						<?php 
+							if (mysqli_num_rows($result) > 0) {
+								while ($row = mysqli_fetch_assoc($result))
+								{
+									echo "<input type=\"submit\" id=\"iPhone_Submit\" value=\"{$row['Model']}\"/>";
+								}
+							} else {
+								
+								echo "Query didn't return any result";
+								
+							}				
+						?>
 					</form>				
 				</p>		
 			</div>
@@ -118,7 +141,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">Buyback Boss inormation</p>
+        <p class="text-muted">Buyback Boss Information</p>
       </div>
     </footer>
 
