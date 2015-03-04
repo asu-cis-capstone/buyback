@@ -22,6 +22,8 @@
 	</head>
 	
 	<body>
+	<div id="fb-root"></div>
+	
 	
 	<!-- Modal -->
 <div class="modal fade" id="refer">
@@ -34,6 +36,8 @@
       <div class="modal-body">
         <img src="../images/referraldummy.png" alt="refer a friend!" id="modalimg"/>
       </div>
+	  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+	  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
