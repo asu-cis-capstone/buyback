@@ -66,68 +66,124 @@
 		</div>
 		
 		<div id="form">
+			
 			<!-- FORM -->
-		<form class="form-inline">	
+			<form action="confirm.php" method="post" class="form-inline">	
+			
 			<!-- Choose Payment Method -->
-			<div class="paymentmethod">
-				<p class="label">Payment Method:</p>
-				 <div class="btn-group" data-toggle="buttons">
-                 <label class="btn btn-primary active">
-                 <input type="radio" name="payment" id="paypal"><img src="../images/paypal.png" alt="paypal" />
-                 </label>
-                 <label class="btn btn-primary">
-                 <input type="radio" name="payment" id="check"><img src="../images/check.png" alt="check" /><span class="btntext">Check</span>
-                 </label>
+				<div class="paymentmethod">
+					<p class="label">Payment Method:</p>
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary active">
+							<input type="radio" name="payment" id="paypal"><img src="../images/paypal.png" alt="paypal" />
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="payment" id="check"><img src="../images/check.png" alt="check" /><span class="btntext">Check</span>
+						</label>
+					</div>
 				</div>
-			</div>
 			
 			<!-- Choose Shipping Method -->
 			<div class="shippingmethod">
 				<p class="label">Shipping Method:</p>
 				<div class="btn-group" data-toggle="buttons">
-                 <label class="btn btn-primary active">
-                 <input type="radio" name="payment" id="paypal" value="paypal"><span class="btntext">Send me a buyback box!</span>
-                 </label>
-                 <label class="btn btn-primary">
-                 <input type="radio" name="payment" id="check"><span class="btntext">I have my own box! Print a label now!</span>
-                 </label>
-				
-			</div></div>
-		<div id="offercontainer">
-		   <span class="offerstatement">
-               Your offer:
-           </span>
-		   
-		   <div id="offerAmount">
-		   $355
-           </div>
-
+					<label class="btn btn-primary active">
+						<input type="radio" name="payment" id="paypal" value="paypal"><span class="btntext">Send me a buyback box!</span>
+					</label>
+					<label class="btn btn-primary">
+						<input type="radio" name="payment" id="check"><span class="btntext">I have my own box! Print a label now!</span>
+					</label>
+				</div>
+			</div>
+		
+			<div id="offercontainer">
+				<span class="offerstatement">
+				Your offer:
+				</span>
+			<div id="offerAmount">
+				$355
+			</div>
 		</div>
 		
 		<!-- Shipping -->
 			<div id="shipinfo">
 			<p class="label">Shipping Information:</p>
 			<div class="form-group">
-				<input type="text" class="form-control" id="firstname" placeholder="First Name">
-				<input type="text" class="form-control" id="lastname" placeholder="Last Name">
-				<input type="email" class="form-control" id="email" placeholder="Email Address">
-				<input type="text" class="form-control" id="phone" placeholder="Phone Number">
-				<input type="text" class="form-control" id="streetaddress" placeholder="Street Address">
-				<input type="text" class="form-control" id="aptnumber" placeholder="Apt. Unit P.O. Box etc...">
-				<input type="text" class="form-control" id="city" placeholder="City">
-				<input type="text" class="form-control" id="state" placeholder="State">
-				<input type="text" class="form-control" id="zip" placeholder="Zip Code">
+			
+			<!-- First Name -->
+		`		<input type="text" class="form-control" id="firstname" name="firstname"
+				required autofocus
+				pattern="[a-zA-Z-' ]{4,30}"
+				title="Name: 4-30 chars, u/l case letters and - or ' only!"
+				placeholder="First Name" />
+				
+			<!-- Last Name -->
+				<input type="text" class="form-control" id="lastname" name="lastname"
+				required
+				pattern="[a-zA-Z-' ]{4,30}"
+				title="Name: 4-30 chars, u/l case letters and - or ' only!"
+				placeholder="Last Name" />
+				
+			<!-- Email -->	
+				<input type="email" class="form-control" id="email" name="email"
+				title="Valid email address only!" required
+				placeholder="Email Address" maxlength="50" />
+				
+			<!-- Phone Number -->
+				<input type="text" class="form-control" id="phone" name="phone"
+				required
+				pattern="[0-9]{10,10}"
+				title="US Based Phone Number 10 numbers exactly"
+				placeholder="Phone Number"/>
+				
+			<!-- Street Address -->	
+				<input type="text" class="form-control" id="streetaddress" name="streetaddress"
+				required
+				maxlength="60"
+				title="Enter valid street address" 
+				placeholder="Street Address"/>
+				
+			<!-- Apt Number -->
+				<input type="text" class="form-control" id="aptnumber" name="aptnumber"
+				placeholder="Apt. Unit P.O. Box etc..." />
+				
+			<!-- City -->
+				<input type="text" class="form-control" id="city" name="city"
+				required
+				pattern="[a-zA-Z-' ]{2,30}"
+				title="Enter city"
+				placeholder="City" />
+				
+			<!-- State -->	
+				<input type="text" class="form-control" id="state" name="state"
+				required
+				pattern="[a-zA-Z-' ]{4,30}"
+				title="Enter State"
+				placeholder="State" />
+				
+			<!-- Zip Code -->	
+				<input type="text" class="form-control" id="zip" name="zip"
+				required
+				pattern="[0-9]{5,5}"
+				title="Enter valid 5 digit zip code"
+				placeholder="Zip Code" />
 				
 				<br/>
-				<label for="refcode">Referral or Coupon Code</label> 
-				<input type="text" class="form-control" id="refcode"><span class="validate"><button class="btn btn-success" type="submit" value="validate" id="validate" onclick="pricechange();return false;">Validate Code</button></span>
+				
+				<label for="refcode">Referral/Coupon Code</label> 
+				<input type="text" class="form-control" id="refcode" name="refcode"><span class="validate">
+				
+				
+				<button class="btn btn-success" type="submit" value="validate" id="validate" 
+				onclick="pricechange();return false;">Validate Code</button></span>
+				
 				<label for="howhear">How did you hear about Buyback Boss?</label>
 				<input type="text" class="form-control" id="howhear">
 			</div>
 			<span class="checkoutButton">
-               <button class="btn btn-primary" type="button" value="checkout" onclick="location.href ='confirm.php'">Submit</button>
-         </span>
-		</form>
+               <button class="btn btn-primary" type="submit" value="checkout">Submit</button>
+			</span>
+			</form>
 		</div></div>
 		
         <footer>
