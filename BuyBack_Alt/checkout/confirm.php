@@ -1,5 +1,37 @@
 <!DOCTYPE html>
 
+<?php
+	//Connect to the db (Local or Server)
+	include('../connection/localconnection.php');
+	
+	//Values from HTML
+	$oname = $_POST['firstname'];
+	$fname	= mysqli_real_escape_string($dbc, $oname);
+	$qname = $_POST['lastname'];
+	$lname = mysqli_real_escape_string($dbc, $qname);
+	$email = mysqli_real_escape_string($dbc, $_POST['email']);
+	$pnumber = $_POST['phone'];
+	$saddress = $_POST['streetaddress'];
+	$aptnumber = $_POST['aptnumber'];
+	$city = $_POST['city'];
+	$state = $_POST['state'];
+	$zip = $_POST['zip'];
+	$rcode = $_POST['refcode'];
+	
+	
+	//Build SQL statement
+	$query =
+	"INSERT INTO accounts(Email, LastName, FirstName, PhoneNum, Address1, Address2, City, State, Zip, ReferralCode)" .
+	"VALUES ('$email', '$lname', '$fname', '$pnumber', '$saddress', '$aptnumber', '$city', '$state', '$zip', '$rcode')";
+	
+	//Run the query
+	$result = mysqli_query($dbc, $query) or die('Unable to write to the database!');
+	
+	// Close the sql connection
+	mysqli_close($dbc);
+
+?>
+
 <html>
 	<head>
 	<!-- Meta tag -->
