@@ -17,17 +17,32 @@
 
 .page-header {
     padding-bottom: 9px;
-    margin: 10px 0px 20px;
+    margin: 10px 0px 0px;
+	border: none;
 
 }
+
+.btn-primary{
+	background-color: #ce0a0a;
+	color: white;
+	border: #ce0a0a;
+}
+
+.btn-primary:hover{
+	background-color: darkgrey;
+	color: white;
+	border: darkgrey;
+}
+
 
 #iPhone_Submit {
 	height: 110px;
     width: 110px;
-	margin: 5px;
+	margin: 10px;
 	border: thin solid gray;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
+	font-size: 150%;
 }
 
 #iPhone_Submit:hover {
@@ -35,19 +50,18 @@
 	color: white;
 }
 
-
 #phones{
 	float: left;
-	width: 50%;
-	margin-left: 5%;
+	width: 60%;
+
 }
 
 
 h1{
 	font-size: 300%;
-	color: #ce0a0a;
-	text-align: center;
-	font-family: "Oswald", sans-serif;
+	color: #CE0A0A;
+	font-family: "Oswald",sans-serif;
+	float: left;
 	
 }
 
