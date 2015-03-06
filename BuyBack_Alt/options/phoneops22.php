@@ -21,7 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../content/sticky-footer-navbar.css" rel="stylesheet">
-	<link href="../content/BBB_phoneops11.css" rel="stylesheet">
+	<link href="../content/BBB_phoneops22.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -82,11 +82,11 @@
 							<p>Model</p>
 						</div>
 						<div class="stepwizard-step">
-							<button type="button" class="btn btn-primary btn-circle" onclick="#">2</button>
+							<button type="button" class="btn btn-default btn-circle" onclick="location.href='../options/phoneops11.php'">2</button>
 							<p>Options</p>
 						</div>
 						<div class="stepwizard-step">
-							<button type="button" class="btn btn-default btn-circle" onclick="#" disabled="disabled">3</button>
+							<button type="button" class="btn btn-primary btn-circle" onclick="#" disabled="disabled">3</button>
 							<p>Quote</p>
 						</div> 
 						<div class="stepwizard-step">
@@ -102,7 +102,7 @@
 		</div>
 		
 		<!-- Options and Selections -->
-		        <h1>What network are you on?
+		        <h1>What condition is your phone in?
 				 <span class="help">
                 <button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
                  ?
@@ -110,52 +110,46 @@
 			<div id="phones">
 				<p>
 				<div id = "form">
-					<form action="../options/phoneops22.php">
-					<div class="btn-group" data-toggle="buttons">
-						<label class="btn btn-primary">
-							<input type="radio" name="carrier" id="att" value="att" required><img src="../images/at-t.png" alt="ATT" />
-						</label>
-						 <label class="btn btn-primary">
-							<input type="radio" name="carrier" id="tmobile" value="tmobile"><img src="../images/t-mobile.png" alt="TMOBILE" />
-						 </label>
-						 <label class="btn btn-primary">
-							 <input type="radio" name="carrier" id="verizon" value="verizon" ><img src="../images/verizon.png" alt="Verizon" />
-						 </label>
-						 <label class="btn btn-primary">
-							 <input type="radio" name="carrier" id="sprint" value="sprint"><img src="../images/sprint.png" alt="Sprint" />
-						 </label>
-						 <label class="btn btn-primary">
-							 <input type="radio" name="carrier" id="unlocked" value="unloacked"><img src="../images/unlocked.png" alt="Unlocked" />
-						 </label>
-                   </div>
-				   <h1>What size iPhone do you have?
-				   <button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
-					?
-					</button></span></h1></h1>
-				   <span class="storage">
-            <div class="btn-group" data-toggle="buttons">
-                 <label class="btn btn-primary">
-					<input type="radio" name="size" id="8gb" value="8gb" required >8GB
-                 </label>
-                 <label class="btn btn-primary">
-					<input type="radio" name="size" id="16gb" value="16gb">16GB
-                 </label>
-                 <label class="btn btn-primary">
-					<input type="radio" name="size" id="32gb" value="32gb">32GB
-                 </label>
-                 <label class="btn btn-primary">
-					<input type="radio" name="size" id="64gb" value="64gb">64GB
-                 </label>
-                 <label class="btn btn-primary">
-					<input type="radio" name="size" id="128gb" value="128gb">128GB
-                 </label>
-             </div></span>
-			 <button id="checkoutButton" class="btn btn-default" type="submit" value="checkout" onclick="location.href = 'phoneops22.php' ">Next</button>
+		<form action="../checkout/checkout.php">
+			<span class="storage">
+			  <div class="btn-group">
+                <label class = "btn btn-primary">
+					<input type = "radio" name="condition" id="mintcon" value="mint" onfocus="mint(); pricemint();" onclick="mint(); pricemint();"/><br/>MINT
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="condition" id="goodcon" value="good" onfocus="good(); pricegood();" onclick="good(); pricegood();"/><br/>GOOD
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="condition" id="crackedcon" value="cracked" onfocus="cracked(); pricecracked();" onclick="cracked(); pricecracked();"/><br/>CRACKED
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="condition" id="damagedcon" value="damaged" onfocus="damaged(); pricedamaged();" onclick="damaged(); pricedamaged();"/><br/>DAMAGED
+                </label>
+                <label class="btn btn-primary">
+                 <input type="radio" name="condition" id="brokencon" value="broken" onfocus="broken(); pricebroken();" onclick="broken(); pricebroken();"/><br/>BROKEN
+                </label>
+           </div></span>
+		   		<div id="messages">
+				<p></p>
+				</div>
+			 <button id="checkoutButton" class="btn btn-default" type="submit" value="checkout">Checkout</button>
 		</div>
 		</form>				
-	</p>		
-</div>
-</div>
+		</p>	
+</div> <!---End phones -->
+		<div id="offercontainer">
+		   <span class="offerstatement">
+               Your offer is:
+           </span>
+		   <div id="offerAmount">
+           </div>
+
+
+		</div>
+		
+
+
+</div> <!-- End container -->
 
 
     <footer class="footer">
@@ -170,7 +164,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../scripts/bootstrap.js"></script>
-	<script src="../scripts/main.js"></script>
+	<script  type="text/javascript" src="../scripts/main.js"></script>
 
   </body>
 </html>

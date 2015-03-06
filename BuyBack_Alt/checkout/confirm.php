@@ -102,7 +102,7 @@
 			
 
 			<div>
-				<button type="button" id="return" onclick="location.href = '../index.html'">
+				<button type="button" id="return" onclick="location.href = '../index.php'">
 					HOME
 				</button>
 			</div>
