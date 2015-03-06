@@ -1,6 +1,60 @@
 <!DOCTYPE html>
 
+<?php
+	//Connect to the db (Local or Server)
+	include('../connection/localconnection.php');
+	
+	function generateRandomString($length = 6) {
+		$characters = '0123456789abcdefghijklmnopqrstuvwxyz';
+		$charactersLength = strlen($characters);
+		$randomString = '';
+		global $dbc;
+		do {
+			for ($i = 0; $i < $length; $i++) {
+				$randomString .= $characters[rand(0, $charactersLength - 1)];
+			}
+			
+			$refQuery = "SELECT * FROM accounts WHERE ReferralCode = '$randomString'";
+			$refExist = mysqli_query($dbc, $refQuery) or die('Unable to query referral code');
+		} while (!$refExist);
+		return $randomString;
+	}
+	
+	$newrefcode = generateRandomString();
+	
+	//Values from HTML
+	$oname = $_POST['firstname'];
+	$fname	= mysqli_real_escape_string($dbc, $oname);
+	$qname = $_POST['lastname'];
+	$lname = mysqli_real_escape_string($dbc, $qname);
+	$email = mysqli_real_escape_string($dbc, $_POST['email']);
+	$pnumber = $_POST['phone'];
+	$saddress = $_POST['streetaddress'];
+	$aptnumber = $_POST['aptnumber'];
+	$city = $_POST['city'];
+	$state = $_POST['state'];
+	$zip = $_POST['zip'];
+	$rcode = $_POST['refcode'];
+	
+	//Check for existing account
+	$existQuery = "SELECT * FROM accounts WHERE Email = '$email' && LastName = '$lname' && FirstName = '$fname' && PhoneNum = '$pnumber' && Address1 = '$saddress' && Address2 = '$aptnumber' && City = '$city' && State = '$state' && Zip = '$zip'";
+	$checkExist = mysqli_query($dbc, $existQuery) or die('Unable to query accounts');
+	
+	if($checkExist){
+		//Build SQL statement
+		$query =
+		"INSERT INTO accounts(Email, LastName, FirstName, PhoneNum, Address1, Address2, City, State, Zip, ReferralCode)" .
+		"VALUES ('$email', '$lname', '$fname', '$pnumber', '$saddress', '$aptnumber', '$city', '$state', '$zip', '$newrefcode')";
+		
+		//Run the query
+		$result = mysqli_query($dbc, $query) or die('Unable to write to the database!');
+	}
+	
+	
+	// Close the sql connection
+	mysqli_close($dbc);
 
+?>
 
 <html lang="en">
   <head>
@@ -21,7 +75,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../content/sticky-footer-navbar.css" rel="stylesheet">
-	<link href="../content/BBB_phoneops22.css" rel="stylesheet">
+	<link href="../content/BBB_confirm.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -35,7 +89,28 @@
   </head>
 
   <body>
-
+<div class="modal fade" id="refer">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Join our referral program!</h4>
+      </div>
+      <div class="modal-body">
+	  <div id="textrefer">
+        Share your referral code with friends! When they sell their device to Buyback Boss, you will get $10 and so will they!
+	  </div>
+	  <div id="share">
+	  <div id="fb">
+	  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div></div>
+	  <div id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a></div>
+	</div>
+	</div>
+	</div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  
+  
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -73,84 +148,25 @@
 
     <!-- Begin page content -->
     <div class="container">
-	  <div class="page-header">
-	  		<div id="steps">
-				<div class="stepwizard">
-					<div class="stepwizard-row">
-						<div class="stepwizard-step">
-							<button type="button" class="btn btn-default btn-circle" onclick="location.href='../models/models.php'">1</button>
-							<p>Model</p>
-						</div>
-						<div class="stepwizard-step">
-							<button type="button" class="btn btn-default btn-circle" onclick="location.href='../options/phoneops11.php'">2</button>
-							<p>Options</p>
-						</div>
-						<div class="stepwizard-step">
-							<button type="button" class="btn btn-primary btn-circle" onclick="#" disabled="disabled">3</button>
-							<p>Quote</p>
-						</div> 
-						<div class="stepwizard-step">
-							<button type="button" class="btn btn-default btn-circle" onclick="#" disabled="disabled">4</button>
-							<p>Checkout</p>
-						</div>
-					</div>
-				</div>
-			</div>
+	<div class="page-header">
+        <h1>THANK YOU!</h1>
       </div>
-		<div id="phoneImage">
-            <img src="../images/iPhone-6-wireframe.jpg" id="small_phone_left"/>
+	  		<div id="message-container">
+			<div id="message">
+				<p>Your order is being processed!</p>
+				<p>An email has been sent to the address with your receipt and confirmation</p>
+				<p>Thanks for choosing us! We greatly appreciate it.</p>
+			</div>
+
+			<!--<div>
+				<button type="button" id="return" onclick="location.href = '../index.php'">
+					HOME
+				</button>-->
+			</div>
 		</div>
-		
-		<!-- Options and Selections -->
-		        <h1>What condition is your phone in?
-				 <span class="help">
-                <button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
-                 ?
-                </button></span></h1>
-			<div id="phones">
-				<p>
-				<div id = "form">
-		<form action="../checkout/checkout.php">
-			<span class="storage">
-			  <div class="btn-group">
-                <label class = "btn btn-primary">
-					<input type = "radio" name="condition" id="mintcon" value="mint" onfocus="mint(); pricemint();" onclick="mint(); pricemint();"/><br/>MINT
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="condition" id="goodcon" value="good" onfocus="good(); pricegood();" onclick="good(); pricegood();"/><br/>GOOD
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="condition" id="crackedcon" value="cracked" onfocus="cracked(); pricecracked();" onclick="cracked(); pricecracked();"/><br/>CRACKED
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="condition" id="damagedcon" value="damaged" onfocus="damaged(); pricedamaged();" onclick="damaged(); pricedamaged();"/><br/>DAMAGED
-                </label>
-                <label class="btn btn-primary">
-                 <input type="radio" name="condition" id="brokencon" value="broken" onfocus="broken(); pricebroken();" onclick="broken(); pricebroken();"/><br/>BROKEN
-                </label>
-           </div></span>
-		   		<div id="messages">
-				<p></p>
-				</div>
-			 <button id="checkoutButton" class="btn btn-default" type="submit" value="checkout">Checkout</button>
-		</div>
-		</form>				
-		</p>	
-</div> <!---End phones -->
-		<div id="offercontainer">
-		   <span class="offerstatement">
-               Your offer is:
-           </span>
-		   <div id="offerAmount">
-		   $355
-           </div>
 
+</div>
 
-		</div>
-		
-
-
-</div> <!-- End container -->
 
 
     <footer class="footer">
@@ -165,7 +181,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../scripts/bootstrap.js"></script>
-	<script  type="text/javascript" src="../scripts/main.js"></script>
+	<script src="../scripts/main.js"></script>
 
   </body>
 </html>

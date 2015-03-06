@@ -100,10 +100,9 @@
 
 	  		<div id="offercontainer">
 				<span class="offerstatement">
-				Your offer:
+				Your order total:
 				</span>
 			<div id="offerAmount">
-				test
 				<?php
 					if ($_GET["rc"] == 1)
 					{
@@ -119,7 +118,6 @@
 						echo '<p class="validate">Returned from process.php!</p>';
 					}
 				?>
-				
 			</div>
 		</div>
 	 <div id="forms">
@@ -155,7 +153,7 @@
 					<!-- Validate Button for Ref Code -->	
 					<span class="validate">
 					<input class="btn btn-success" type="submit" id="validate" value="Validate Code" 
-					onclick="closemodal(); location.href='process.php';"></button>
+					onclick="location.href='process.php'"></button>
 					</span>
 				</form>
                 <br/><button id="activate-step-2" class="btn btn-primary btn-lg">Next</button>
@@ -164,7 +162,7 @@
     </div>
 	
 	<!-- FORM -->
-	<form action="confirm.php" method="post" class="form-inline">
+	<form action="confirm2.php" method="post" class="form-inline">
     <div class="row setup-content" id="step-2">
         <div class="col-xs-12">
             <div class="col-md-12 well">
@@ -323,7 +321,7 @@
 				
 				
 			<!-- How did you hear about us? -->
-				<label for="howhear">How did you hear about Buyback Boss?</label>
+				<span class="sub2"><label for="howhear">How did you hear about Buyback Boss?</label></span>
 				<select type="text" class="form-control" id="family" name="family">
 					<option value="XXX">Select an option...</option>
 					<option value="Family">Family</option>
@@ -335,10 +333,9 @@
 				
 				
 			</div><br/>
-			<span class="checkoutButton">
-               <button class="btn btn-primary" type="submit" value="checkout">Submit</button>
-			</span>
 			
+               <button id="checkoutButton" class="btn btn-primary" type="submit">Submit Order</button>
+
 			
 		</div>
 				

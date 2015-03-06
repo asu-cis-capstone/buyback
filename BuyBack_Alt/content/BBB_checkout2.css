@@ -100,17 +100,34 @@ h1{
 
 #step-3 input{	
 	font-family: "Open Sans Condensed", sans-serif;
-	font-size: 150%;
-	width: 49.5%;
+	font-size: 125%;
+	
 	margin-top: 5px;
+	padding-top: none;
 }
 
-#streetaddress input{
+#step-3 select{
+	height: 2.5em;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 100%;
+	padding-top: none;
+	margin-top: 5px;
+
+}
+
+#firstname, #lastname, #email, #phone{
+	width: 49.5%;
+}
+
+#streetaddress{
 	width: 60%;
 }
 
-#aptnumber input{
-	width: 39.5%;
+
+
+#family{
+	width: 50%;
+
 }
 
 .form-inline .form-group {
@@ -148,6 +165,12 @@ label.btn.btn-primary{
 	font-weight: lighter;
 }
 
+.sub2{
+	font-size: 100%;
+	font-family: "Oswald", sans-serif;
+}
+
+
 .btn-group{
 	margin-left: 30%;
 	padding-top: 2.5%;
@@ -169,6 +192,24 @@ label.btn.btn-primary{
 	height:50px;
 	width: 100px;
 	
+}
+
+#checkoutButton{
+    color: #fff;
+	font-weight: bold;
+	font-family: aharoni, arial, sans-serif;
+	background-color:#ce0a0a;
+	position: relative;
+	float: right;
+	margin: 15px;
+	width: 120px;
+	height: 40px;
+	border: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#checkoutButton:hover{
+	background-color: #B90D0D;
 }
 
 /*Step wizard*/
@@ -234,4 +275,37 @@ label.btn.btn-primary{
   line-height: 1.428571429;
   border-radius: 15px;
   
+}
+
+.tiny{
+	font-size: .001%;
+
+}
+
+.smaller{
+	font-size: 40%;
+
+}
+
+.offerstatement{
+	font-family: "Lobster", sans-serif;
+	font-size: 250%;
+	z-index: 100;
+	padding-top: 150px;
+}
+
+#offerAmount{
+	font-family: "Oswald", sans-serif;
+	font-size: 500%;
+	color: #ce0a0a;
+}
+
+#small_phone_left {
+	height: 400px;
+}
+
+#phoneImage{
+	width: 25%;
+	float: left;
+
 }
