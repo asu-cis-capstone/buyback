@@ -25,6 +25,34 @@
 	</head>
 	
 	<body>
+	<div id="option">
+		<!-- Modal -->
+		<div class="modal fade" id="refer">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Do you have a referral code?</h4>
+			  </div>
+			  <div class="modal-body">
+				<form id="referral" action="process.php" method="post">
+					<!-- Referral Code -->	
+					<label for="refcode">Referral/Coupon Code</label> 
+					<input type="text" class="form-control" id="refcode" name="refcode"
+					pattern="[a-z0-9]{6,6}"
+					title="Invalid referral code!"/>
+			
+					<!-- Validate Button for Ref Code -->	
+					<span class="validate">
+					<input class="btn btn-success" type="submit" id="validate" value="Validate Code" 
+					onclick="closemodal(); location.href='process.php';"></button>
+					</span>
+				</form>
+			  </div>
+			</div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+	</div>
 	    <!-- Header and Navigation Bar -->
 	    <header>
             <div class="content-wrapper">
@@ -101,7 +129,23 @@
 				Your offer:
 				</span>
 			<div id="offerAmount">
-				$355
+				
+				<?php
+					if ($_GET["rc"] == 1)
+					{
+						echo '<pclass="validate">Referral code invalid </b>$355</p>
+						<script>closemodal()</script>';
+					}
+					if ($_GET["rc"] == 2)
+					{
+						echo '<p class="validate">$365</p>';
+					}
+					if ($_GET["rc"] == 3)
+					{
+						echo '<p class="validate">Returned from process.php!</p>';
+					}
+				?>
+				
 			</div>
 		</div>
 		
@@ -113,20 +157,22 @@
 			<!-- First Name -->
 		`		<input type="text" class="form-control" id="firstname" name="firstname"
 				required autofocus
-				pattern="[a-zA-Z-' ]{4,30}"
-				title="Name: 4-30 chars, u/l case letters and - or ' only!"
+				pattern="[a-zA-Z-' ]{2,30}"
+				title="Name: 2-30 chars, u/l case letters and - or ' only!"
 				placeholder="First Name" />
 				
 			<!-- Last Name -->
 				<input type="text" class="form-control" id="lastname" name="lastname"
 				required
-				pattern="[a-zA-Z-' ]{4,30}"
-				title="Name: 4-30 chars, u/l case letters and - or ' only!"
+				pattern="[a-zA-Z-' ]{2,30}"
+				title="Name: 2-30 chars, u/l case letters and - or ' only!"
 				placeholder="Last Name" />
 				
 			<!-- Email -->	
 				<input type="email" class="form-control" id="email" name="email"
-				title="Valid email address only!" required
+				required
+				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+				title="Valid email address only!" 
 				placeholder="Email Address" maxlength="50" />
 				
 			<!-- Phone Number -->
@@ -145,6 +191,7 @@
 				
 			<!-- Apt Number -->
 				<input type="text" class="form-control" id="aptnumber" name="aptnumber"
+				maxlength="20"
 				placeholder="Apt. Unit P.O. Box etc..." />
 				
 			<!-- City -->
@@ -155,11 +202,60 @@
 				placeholder="City" />
 				
 			<!-- State -->	
-				<input type="text" class="form-control" id="state" name="state"
-				required
-				pattern="[a-zA-Z-' ]{4,30}"
-				title="Enter State"
-				placeholder="State" />
+				<select type="text" class="form-control" id="state" name="state">
+					<option value="XX">Select a state...</option>
+					<option value="AL">Alabama</option>
+					<option value="AK">Alaska</option>
+					<option value="AZ">Arizona</option>
+					<option value="AR">Arkansas</option>
+					<option value="CA">California</option>
+					<option value="CO">Colorado</option>
+					<option value="CT">Connecticut</option>
+					<option value="DE">Delaware</option>
+					<option value="DC">District of Columbia</option>
+					<option value="FL">Florida</option>
+					<option value="GA">Georgia</option>
+					<option value="HI">Hawaii</option>
+					<option value="ID">Idaho</option>
+					<option value="IL">Illinois</option>
+					<option value="IN">Indiana</option>
+					<option value="IA">Iowa</option>
+					<option value="KS">Kansas</option>
+					<option value="KY">Kentucky</option>
+					<option value="LA">Louisiana</option>
+					<option value="ME">Maine</option>
+					<option value="MD">Maryland</option>
+					<option value="MA">Massachusetts</option>
+					<option value="MI">Michigan</option>
+					<option value="MN">Minnesota</option>
+					<option value="MS">Mississippi</option>
+					<option value="MO">Missouri</option>
+					<option value="MT">Montana</option>
+					<option value="NE">Nebraska</option>
+					<option value="NV">Nevada</option>
+					<option value="NH">New Hampshire</option>
+					<option value="NJ">New Jersey</option>
+					<option value="NM">New Mexico</option>
+					<option value="NY">New York</option>
+					<option value="NC">North Carolina</option>
+					<option value="ND">North Dakota</option>
+					<option value="OH">Ohio</option>
+					<option value="OK">Oklahoma</option>
+					<option value="OR">Oregon</option>
+					<option value="PA">Pennsylvania</option>
+					<option value="RI">Rhode Island</option>
+					<option value="SC">South Carolina</option>
+					<option value="SD">South Dakota</option>
+					<option value="TN">Tennessee</option>
+					<option value="TX">Texas</option>
+					<option value="UT">Utah</option>
+					<option value="VT">Vermont</option>
+					<option value="VA">Virginia</option>
+					<option value="WA">Washington</option>
+					<option value="WV">West Virginia</option>
+					<option value="WI">Wisconsin</option>
+					<option value="WY">Wyoming</option>
+				</select>
 				
 			<!-- Zip Code -->	
 				<input type="text" class="form-control" id="zip" name="zip"
@@ -170,20 +266,26 @@
 				
 				<br/>
 				
-				<label for="refcode">Referral/Coupon Code</label> 
-				<input type="text" class="form-control" id="refcode" name="refcode"><span class="validate">
 				
-				
-				<button class="btn btn-success" type="submit" value="validate" id="validate" 
-				onclick="pricechange();return false;">Validate Code</button></span>
-				
+			<!-- How did you hear about us? -->
 				<label for="howhear">How did you hear about Buyback Boss?</label>
-				<input type="text" class="form-control" id="howhear">
+				<select type="text" class="form-control" id="family" name="family">
+					<option value="XXX">Select an option...</option>
+					<option value="Family">Family</option>
+					<option value="Friend">Friend</option>
+					<option value="BB End">Buyback Endorser</option>
+					<option value="Ad">Advertisement</option>
+					<option value="Other">Other</option>
+				</select>
+				
+				
 			</div>
 			<span class="checkoutButton">
                <button class="btn btn-primary" type="submit" value="checkout">Submit</button>
 			</span>
 			</form>
+			
+			
 		</div></div>
 		
         <footer>

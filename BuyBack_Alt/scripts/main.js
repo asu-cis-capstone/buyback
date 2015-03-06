@@ -88,3 +88,8 @@ function pricebroken()
 	document.getElementById("offerAmount").innerHTML=
 	"$15";
 }
+
+function closemodal()
+{
+	document.getElementById("#option").style.display = "none";
+}
