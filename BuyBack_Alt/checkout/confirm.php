@@ -4,6 +4,24 @@
 	//Connect to the db (Local or Server)
 	include('../connection/localconnection.php');
 	
+	function generateRandomString($length = 6) {
+		$characters = '0123456789abcdefghijklmnopqrstuvwxyz';
+		$charactersLength = strlen($characters);
+		$randomString = '';
+		global $dbc;
+		do {
+			for ($i = 0; $i < $length; $i++) {
+				$randomString .= $characters[rand(0, $charactersLength - 1)];
+			}
+			
+			$refQuery = "SELECT * FROM accounts WHERE ReferralCode = '$randomString'";
+			$refExist = mysqli_query($dbc, $refQuery) or die('Unable to query referral code');
+		} while (!$refExist);
+		return $randomString;
+	}
+	
+	$newrefcode = generateRandomString();
+	
 	//Values from HTML
 	$oname = $_POST['firstname'];
 	$fname	= mysqli_real_escape_string($dbc, $oname);
@@ -18,14 +36,20 @@
 	$zip = $_POST['zip'];
 	$rcode = $_POST['refcode'];
 	
+	//Check for existing account
+	$existQuery = "SELECT * FROM accounts WHERE Email = '$email' && LastName = '$lname' && FirstName = '$fname' && PhoneNum = '$pnumber' && Address1 = '$saddress' && Address2 = '$aptnumber' && City = '$city' && State = '$state' && Zip = '$zip'";
+	$checkExist = mysqli_query($dbc, $existQuery) or die('Unable to query accounts');
 	
-	//Build SQL statement
-	$query =
-	"INSERT INTO accounts(Email, LastName, FirstName, PhoneNum, Address1, Address2, City, State, Zip, ReferralCode)" .
-	"VALUES ('$email', '$lname', '$fname', '$pnumber', '$saddress', '$aptnumber', '$city', '$state', '$zip', '$rcode')";
+	if($checkExist){
+		//Build SQL statement
+		$query =
+		"INSERT INTO accounts(Email, LastName, FirstName, PhoneNum, Address1, Address2, City, State, Zip, ReferralCode)" .
+		"VALUES ('$email', '$lname', '$fname', '$pnumber', '$saddress', '$aptnumber', '$city', '$state', '$zip', '$newrefcode')";
+		
+		//Run the query
+		$result = mysqli_query($dbc, $query) or die('Unable to write to the database!');
+	}
 	
-	//Run the query
-	$result = mysqli_query($dbc, $query) or die('Unable to write to the database!');
 	
 	// Close the sql connection
 	mysqli_close($dbc);
