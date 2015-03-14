@@ -45,5 +45,6 @@ NOTE: Steps 2 and 5 are only necessary if you wish to test/make changes to the d
   * Connected database and Visual Studio
   * Set up initial file structure
 
-
+###v0.4 Release Notes
+https://www.youtube.com/watch?v=UxQkIhcjkOA
 
