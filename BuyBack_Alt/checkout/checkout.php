@@ -22,6 +22,9 @@
     <!-- Custom styles for this template -->
     <link href="../content/sticky-footer-navbar.css" rel="stylesheet">
 	<link href="../content/BBB_checkout2.css" rel="stylesheet">
+	
+	<!-- JavaScript Messages Script -->
+	<script type="text/javascript" src="../scripts/msgs.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -148,7 +151,8 @@
 					<!-- Referral Code -->	
 					<input type="text" class="form-control" id="refcode" name="refcode"
 					pattern="[a-z0-9]{6,6}"
-					title="Invalid referral code!"/>
+					title="Invalid referral code!"
+					onfocus="refmsg()"/>
 			
 					<!-- Validate Button for Ref Code -->	
 					<span class="validate">
@@ -159,7 +163,13 @@
                 <br/><button id="activate-step-2" class="btn btn-primary btn-lg">Next</button>
             </div>
         </div>
+		<div id="refmessage">
+		<p>6 digit alpha numeric code is NOT required. Enter code and click 
+		validate or hit next to continue...</p>
+		</div>
     </div>
+	
+	
 	
 	<!-- FORM -->
 	<form action="confirm2.php" method="post" class="form-inline">
@@ -206,17 +216,19 @@
 			
 			<!-- First Name -->
 		<input type="text" class="form-control" id="firstname" name="firstname"
-				required autofocus
+				required 
 				pattern="[a-zA-Z-' ]{2,30}"
 				title="Name: 2-30 chars, u/l case letters and - or ' only!"
-				placeholder="First Name" />
+				placeholder="First Name" 
+				onfocus="fnamemsg()"/>
 				
 			<!-- Last Name -->
 				<input type="text" class="form-control" id="lastname" name="lastname"
 				required
 				pattern="[a-zA-Z-' ]{2,30}"
 				title="Name: 2-30 chars, u/l case letters and - or ' only!"
-				placeholder="Last Name" />
+				placeholder="Last Name" 
+				onfocus="lnamemsg()"/>
 				
 				<br/>
 			<!-- Email -->	
@@ -224,14 +236,16 @@
 				required
 				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 				title="Valid email address only!" 
-				placeholder="Email Address" maxlength="50" />
+				placeholder="Email Address" maxlength="50" 
+				onfocus="emailmsg()"/>
 				
 			<!-- Phone Number -->
 				<input type="text" class="form-control" id="phone" name="phone"
 				required
 				pattern="[0-9]{10,10}"
 				title="US Based Phone Number 10 numbers exactly"
-				placeholder="Phone Number"/>
+				placeholder="Phone Number"
+				onfocus="pnummsg()"/>
 				
 				<br/>
 			<!-- Street Address -->	
@@ -239,12 +253,14 @@
 				required
 				maxlength="60"
 				title="Enter valid street address" 
-				placeholder="Street Address"/>
+				placeholder="Street Address"
+				onfocus="streetmsg()"/>
 				
 			<!-- Apt Number -->
 				<input type="text" class="form-control" id="aptnumber" name="aptnumber"
 				maxlength="20"
-				placeholder="Apt. Unit P.O. Box etc..." />
+				placeholder="Apt. Unit P.O. Box etc..." 
+				onfocus="aptmsg()"/>
 				
 				<br/>
 			<!-- City -->
@@ -252,10 +268,11 @@
 				required
 				pattern="[a-zA-Z-' ]{2,30}"
 				title="Enter city"
-				placeholder="City" />
+				placeholder="City" 
+				onfocus="citymsg()"/>
 				
 			<!-- State -->	
-				<select type="text" class="form-control" id="state" name="state">
+				<select type="text" class="form-control" id="state" name="state" onfocus="statemsg()">
 					<option value="XX">Select a state...</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
@@ -315,14 +332,15 @@
 				required
 				pattern="[0-9]{5,5}"
 				title="Enter valid 5 digit zip code"
-				placeholder="Zip Code" />
+				placeholder="Zip Code" 
+				onfocus="zipmsg()"/>
 				
 				<br/>
 				
 				
 			<!-- How did you hear about us? -->
 				<span class="sub2"><label for="howhear">How did you hear about Buyback Boss?</label></span>
-				<select type="text" class="form-control" id="family" name="family">
+				<select type="text" class="form-control" id="family" name="family" onfocus="howdidmsg()">
 					<option value="XXX">Select an option...</option>
 					<option value="Family">Family</option>
 					<option value="Friend">Friend</option>
@@ -330,13 +348,15 @@
 					<option value="Ad">Advertisement</option>
 					<option value="Other">Other</option>
 				</select>
-				
+			
+			<div id="messages">
+					<p></p>
+				</div>
 				
 			</div><br/>
 			
                <button id="checkoutButton" class="btn btn-primary" type="submit">Submit Order</button>
 
-			
 		</div>
 				
             </div>
@@ -345,7 +365,7 @@
 	
 </form></div>
 </div>
-
+ 
 
 
     <footer class="footer">

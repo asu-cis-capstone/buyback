@@ -309,3 +309,45 @@ label.btn.btn-primary{
 	float: left;
 
 }
+
+textarea:required { background-image: url('../images/required.png');}
+
+textarea:valid {  background-image: url('../images/valid.png');}
+
+textarea:focus:invalid{  background-image: url('../images/invalid.png');}
+
+input:not([type=submit]):not([type=checkbox]):not([type=reset]) {
+	background:		#fff no-repeat top right;
+}
+
+input:not([type=submit]):not([type=checkbox]):required {
+	background-image:		url('../images/required.png');
+}
+
+input:not([type=submit]):not([type=checkbox]):valid {
+	background-image:		url('../images/valid.png');
+}
+
+input:not([type=submit]):not([type=checkbox]):focus:invalid {
+	background-image:		url('../images/invalid.png');
+}
+
+#messages {
+		color:			#ff0000;
+		font-size: 		85%;
+		text-align:		center;
+		font-style:		italic;
+		margin-top:		10px;
+		font-weight:	bold;
+		
+		}
+		
+#refmessage {
+		color:			#ff0000;
+		font-size: 		85%;
+		text-align:		center;
+		font-style:		italic;
+		margin-top:		10px;
+		font-weight:	bold;
+		
+		}
