@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+
+<?php
+
+		
+	
+	session_start();
+	unset($_SESSION['brand']);
+	unset($_SESSION['model']);
+	unset($_SESSION['carrier']);
+	unset($_SESSION['size']);
+
+	
+	
+?>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -120,7 +135,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">Buyback Boss inormation</p>
+        <p class="text-muted">Buyback Boss Information</p>
       </div>
     </footer>
 

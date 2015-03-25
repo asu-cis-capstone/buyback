@@ -2,8 +2,17 @@
 
 <?php
 
-	$brand = $_GET['brand'];
-
+	session_start();
+	if(isset($_SESSION['brand']))
+	{
+		$brand = $_SESSION['brand'];
+	}
+	else
+	{
+		$_SESSION['brand'] = $_GET['brand'];
+		$brand = $_SESSION['brand'];
+	}
+	
 	include('../connection/localconnection.php');
 	
 	$query = "SELECT DISTINCT Model FROM models WHERE brand = '$brand'";
@@ -117,15 +126,15 @@
 		</div>
 		
 		<!-- Options and Selections -->
-		        <h1>Which model iPhone do you have? </h1>
+		        <h1>Which model <?php echo $brand ?> do you have? </h1>
 			<div id="phones">
 				<p>
-					<form action="../options/phoneops11.php">
+					<form action="../options/phoneops11.php" method="post">
 						<?php 
 							if (mysqli_num_rows($result) > 0) {
 								while ($row = mysqli_fetch_assoc($result))
 								{
-									echo "<input type=\"submit\" id=\"iPhone_Submit\" value=\"$brand {$row['Model']}\"/>";
+									echo "<input type=\"submit\" id=\"iPhone_Submit\" name=\"model\" value=\"{$row['Model']}\"/>";
 								}
 							} else {
 								
