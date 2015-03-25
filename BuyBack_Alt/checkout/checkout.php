@@ -164,8 +164,7 @@
             </div>
         </div>
 		<div id="refmessage">
-		<p>6 digit alpha numeric code is NOT required. Enter code and click 
-		validate or hit next to continue...</p>
+		<p>If you do not have a referral code or coupon code, click "Next" to continue!</p>
 		</div>
     </div>
 	
@@ -176,15 +175,15 @@
     <div class="row setup-content" id="step-2">
         <div class="col-xs-12">
             <div class="col-md-12 well">
-                <h1 class="text-center"> How would you like us to <strong>pay</strong> you?</h1>
+                <h1 class="text-center"> How would you like us to <strong>PAY</strong> you?</h1>
 				<!-- Choose Payment Method -->
 				<div class="paymentmethod">
 					<div class="btn-group" data-toggle="buttons">
 						<label class="btn btn-primary active">
-							<input type="radio" name="payment" value="paypal" id="paypal"><img id="paypalimg" src="../images/paypal.png" alt="paypal" />
+							<input type="radio" name="payment" value="paypal" id="paypal"><br/><span class="btntext1">PayPal</span>
 						</label>
 						<label class="btn btn-primary">
-							<input type="radio" name="payment" value="check" id="check"><img id="checkimg" src="../images/check.png" alt="check" /><br/><span class="btntext1">Check</span>
+							<input type="radio" name="payment" value="check" id="check"><br/><span class="btntext1">Check</span>
 						</label>
 					</div>
 				</div>
@@ -198,7 +197,7 @@
 						
 					</label>
 					<label class="btn btn-primary">
-						<input type="radio" name="payment" id="check"><span class="btntext">I have my own box!<br/> Print a shipping label now!</span>
+						<input type="radio" name="payment" id="check"><span class="btntext">I have my own box!<br/>Print a shipping label now!</span>
 					</label>
 				</div>
 			</div>

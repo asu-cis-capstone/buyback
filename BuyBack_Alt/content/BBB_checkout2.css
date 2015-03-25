@@ -34,7 +34,30 @@ h1{
 	color: white;
 
 }
+.btn-primary{
+	background-color: rgba(211, 211, 211, 0.27);
+	color: gray;
+	margin: 10px;
+	border: thin solid gray;
+	border-radius: 2px;
+}
 
+.btn-primary.active{
+	background-color: #ce0a0a;
+	color: white;
+	border: thin solid #ce0a0a;
+
+}
+
+.btn-primary.btn-lg{
+	color: white;
+}
+
+.btn-primary:hover {
+	background-color: #ce0a0a;
+	color: white;
+	border: thin solid #ce0a0a;
+}
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
   text-decoration: none;
@@ -125,10 +148,13 @@ h1{
 
 
 
+
 #family{
-	width: 50%;
+	width: 25%;
+	margin-top: 10px;
 
 }
+
 
 .form-inline .form-group {
     display: inline-block;
@@ -145,7 +171,7 @@ label.btn.btn-primary{
 
 .btntext1{
 	font-family: "Open Sans Condensed", sans-serif;
-	font-size:	120%;
+	font-size:	150%;
 	font-weight: bold;
 
 }
@@ -167,7 +193,14 @@ label.btn.btn-primary{
 
 .sub2{
 	font-size: 100%;
-	font-family: "Oswald", sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
+	color: gray;
+	padding-top: 100px;
+}
+
+label{
+	padding-top: 10px;
+
 }
 
 
@@ -333,21 +366,23 @@ input:not([type=submit]):not([type=checkbox]):focus:invalid {
 }
 
 #messages {
-		color:			#ff0000;
-		font-size: 		85%;
+		font-family:	"Open Sans Condensed", sans-serif;
+		color:			#ce0a0a;
+		font-size: 		125%;
 		text-align:		center;
 		font-style:		italic;
 		margin-top:		10px;
-		font-weight:	bold;
+
 		
 		}
 		
 #refmessage {
-		color:			#ff0000;
-		font-size: 		85%;
+		font-family:	"Open Sans Condensed", sans-serif;
+		color:			#ce0a0a;
+		font-size: 		125%;
 		text-align:		center;
 		font-style:		italic;
 		margin-top:		10px;
-		font-weight:	bold;
 		
-		}
+		
+}

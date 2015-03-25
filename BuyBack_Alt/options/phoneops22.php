@@ -34,7 +34,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body  onLoad="good(); pricegood();">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -117,7 +117,7 @@
 					<input type = "radio" name="condition" id="mintcon" value="mint" onfocus="mint(); pricemint();" onclick="mint(); pricemint();"/><br/>MINT
                 </label>
                 <label class="btn btn-primary">
-                    <input type="radio" name="condition" id="goodcon" value="good" onfocus="good(); pricegood();" onclick="good(); pricegood();"/><br/>GOOD
+                    <input type="radio" name="condition" id="goodcon" value="good" checked autofocus onfocus="good(); pricegood();" onclick="good(); pricegood();"/><br/>GOOD
                 </label>
                 <label class="btn btn-primary">
                     <input type="radio" name="condition" id="crackedcon" value="cracked" onfocus="cracked(); pricecracked();" onclick="cracked(); pricecracked();"/><br/>CRACKED

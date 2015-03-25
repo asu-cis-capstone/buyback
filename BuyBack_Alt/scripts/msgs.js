@@ -1,59 +1,59 @@
 function fnamemsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Enter your first name";
+	"Please enter your first name.";
 }
 
 function lnamemsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Enter your last name";
+	"Please enter your last name.";
 }
 
 function emailmsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Enter your valid email address";
+	"We will use this email to contact you should we have any problems with your phone.";
 }
 
 function pnummsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Enter your 10 digit phone number. No spaces, parentheses, or dashes. Ex: 4801111111";
+	"Enter your 10 digit phone number with no paces, parentheses, or dashes. Ex: 4801111111";
 }
 
 function streetmsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Enter your street address";
+	"Enter your street address. This is the return address on the shipping label.";
 }
 
 function aptmsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Enter apt number or PO Box if you don't have one leave blank";
+	"Enter Apt. Number or PO Box, if necessary.";
 }
 
 function citymsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Enter City";
+	"Enter City.";
 }
 
 function statemsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Select a state";
+	"Select a state.";
 }
 
 function zipmsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Enter your zip code";
+	"Enter your zip code.";
 }
 
 function howdidmsg() 
 {
 	document.getElementById("messages").innerHTML=
-	"Select how you heard about Buyback Boss";
+	"Select how you heard about Buyback Boss.";
 }
