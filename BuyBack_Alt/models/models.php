@@ -140,7 +140,7 @@
 								
 								echo "Query didn't return any result";
 								
-							}				
+							}
 						?>
 					</form>				
 				</p>		
