@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-	session_start();
+	session_start("customer");
 	
 	if(!isset($_SESSION['model']))
 	{

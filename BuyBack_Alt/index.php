@@ -4,12 +4,12 @@
 
 		
 	
-	session_start();
+	session_start("customer");
 	unset($_SESSION['brand']);
 	unset($_SESSION['model']);
 	unset($_SESSION['carrier']);
 	unset($_SESSION['size']);
-
+	unset($_SESSION['refcode']);
 	
 	
 ?>
@@ -97,33 +97,33 @@
 		 <h1>HOW IT WORKS</h1>
 		<div class="col-md-4 column">
 			<h2>
-				1. Get A Quote
+				Heading
 			</h2>
 			<p>
-				Select your iPhone on our homepage. Select your iPhone and evaluate its condition. Designate whether you would like to be paid via Business Check or PayPal and we will mail you a prepaid shipping kit. Shipping is 100% Free.			</p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
 			<p>
 				<a class="btn" href="#">View details »</a>
 			</p>
 		</div>
 		<div class="col-md-4 column">
 			<h2>
-				2. Ship Your iPhone
+				Heading
 			</h2>
-			<h4>
-				With Prepaid Shipping Label
-			</h4>
 			<p>
-				Upon receipt of our prepaid mailing kit, place your iPhone in our packaging material supplied within the box, and secure the box with our tape. Drop the mailing kit off at your local Post Office, Blue Bin, or with your local Postal Carrier.			</p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
 			<p>
 				<a class="btn" href="#">View details »</a>
 			</p>
 		</div>
 		<div class="col-md-4 column">
 			<h2>
-				3. Get Paid
+				Heading
 			</h2>
 			<p>
-				Once we receive your package, we will inspect your item and confirm its condition. We issue your payment within 2 business days via Check or PayPal. You can track the status of your iPhone on our website. Sit back, relax, and get paid!			</p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
 			<p>
 				<a class="btn" href="#">View details »</a>
 			</p>

@@ -107,18 +107,25 @@
 				</span>
 			<div id="offerAmount">
 				<?php
-					if ($_GET["rc"] == 1)
+					if(isset($_SESSION['refcode']))
 					{
-						echo '<pclass="validate">Referral code invalid </b>$355</p>
-						<script>closemodal()</script>';
+						if ($_GET["rc"] == 1)
+						{
+							echo '<p class="validate">Referral code invalid </b>$355</p>
+							<script>closemodal()</script>';
+						}
+						if ($_GET["rc"] == 2)
+						{
+							echo '<p class="validate">$365</p>';
+						}
+						if ($_GET["rc"] == 3)
+						{
+							echo '<p class="validate">Returned from process.php!</p>';
+						}
 					}
-					if ($_GET["rc"] == 2)
+					else
 					{
-						echo '<p class="validate">$365</p>';
-					}
-					if ($_GET["rc"] == 3)
-					{
-						echo '<p class="validate">Returned from process.php!</p>';
+						echo '<p class="validate">$355</p>';
 					}
 				?>
 			</div>

@@ -1,6 +1,8 @@
 <?php
 	//Validate Referral Code
-	
+	//Start PHP session 
+	session_name('customer');
+	session_start('customer');
 	// Set up db connection
 	include('../connection/localconnection.php');
 	
@@ -30,13 +32,11 @@
 	//Close the db connection
 	mysqli_close($dbc);
 	
-	//Start PHP session 
-	session_name('customer');
-	session_start('customer');
+	
 	
 	//Get and store our PHP session variables
 	$row = mysqli_fetch_array($result);
-	$_SESSION['customer'] = $row['ReferralCode'];
+	$_SESSION['refcode'] = $row['ReferralCode'];
 	header('Location: confirm.php');
 	exit;
 	

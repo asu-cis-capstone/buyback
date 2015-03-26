@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<?php
+	session_start("customer");
+?>
 
 
 <html lang="en">
@@ -110,7 +112,7 @@
 			<div id="phones">
 				<p>
 				<div id = "form">
-		<form action="../checkout/checkout.php">
+		<form action="../checkout/process.php" method="post">
 			<span class="storage">
 			  <div class="btn-group">
                 <label class = "btn btn-primary">

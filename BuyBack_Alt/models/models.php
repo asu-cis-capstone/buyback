@@ -2,7 +2,7 @@
 
 <?php
 
-	session_start();
+	session_start("customer");
 	if(isset($_SESSION['brand']))
 	{
 		$brand = $_SESSION['brand'];
@@ -140,7 +140,7 @@
 								
 								echo "Query didn't return any result";
 								
-							}
+							}				
 						?>
 					</form>				
 				</p>		
