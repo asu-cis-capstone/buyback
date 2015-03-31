@@ -1,0 +1,79 @@
+#message-container {
+	font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+#message {
+	text-align: center;
+}
+
+#refer{
+	font-family: "Open Sans Condensed", sans-serif;
+	color: gray;
+	text-align: center;
+}
+
+h4{
+	
+	font-size: 300%;
+	font-weight: bold;
+
+}
+
+.modal-body{
+	font-size: 150%;
+	padding-bottom: 200px;
+
+}
+#modalimg{
+ height: 100%;
+ width: 100%;
+}
+
+h1{
+	font-size: 500%;
+	font-family: "Oswald",sans serif;
+	color: #ce0a0a;
+	text-align: center;
+}
+
+.pluginCountButton {
+    height: 1000px;
+}
+
+#textrefer{
+	width: 100%;
+}
+
+
+#twitter{
+	margin-left: 60px;
+	margin-top: 45px;
+	float: left;
+	
+	
+}
+
+#share{
+	width: 100%;
+	padding-left: 28%;
+}
+#fb{
+	margin-top: 30px;
+	float: left;
+	
+}
+ .fb-share-button
+{
+transform: scale(1.5);
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+-o-transform: scale(1.5);
+-moz-transform: scale(1.5);
+transform-origin: top left;
+-ms-transform-origin: top left;
+-webkit-transform-origin: top left;
+-moz-transform-origin: top left;
+-webkit-transform-origin: top left;
+}
