@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 05, 2015 at 06:30 PM
+-- Generation Time: Apr 01, 2015 at 05:02 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -40,14 +40,13 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `ReferralCode` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`AccountId`),
   KEY `ReferralCode` (`ReferralCode`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
 
 --
 -- Dumping data for table `accounts`
 --
 
 INSERT INTO `accounts` (`AccountId`, `Email`, `LastName`, `FirstName`, `PhoneNum`, `Address1`, `Address2`, `City`, `State`, `Zip`, `ReferralCode`) VALUES
-(8, 'kylesalomo@me.com', 'Salomon', 'Kyle', '2147483647', '', '', '', '', 0, ''),
 (9, 'kylesalomo@me.com', 'Salomon', 'Kyle', '2147483647', '1111 8th St', '13', 'Scottsdale', 'Arizona', 85253, '1324656'),
 (10, 'kingsalomone@cox.net', 'Salomon', 'Kyle', '2147483647', '1111 8th St', '14', 'Phoenix', 'Arizona', 85253, '1234568'),
 (11, 'kingme@coxnet', 'Salomon', 'Kyle', '1111111111', '1123 n. 90th street', '178', 'Tempe', 'Ariz', 85253, '777898'),
@@ -56,7 +55,17 @@ INSERT INTO `accounts` (`AccountId`, `Email`, `LastName`, `FirstName`, `PhoneNum
 (14, 'dennis.anderson@asu.edu', 'Salomon', 'Denise', '2147483647', '1123 n. 90th street', 'asd', 'Scottsdale', 'Arizona', 85256, '35216'),
 (15, 'kylesalomo@me.com', 'Salomon', 'Kyle', '2147483647', '1123 n. 90th street', '66', 'Phoenix', 'Arizona', 85253, '12414564'),
 (16, 'kylesalomo@me.com', 'Salomon', 'Kyle', '2147483647', '1123 n. 90th street', '66', 'Phoenix', 'Arizona', 85253, '12414564'),
-(17, 'jd@me.com', 'Doan', 'Jane', '2147483647', '1111 nt 9th st', '44', 'Phoenix', 'Arizona', 11111, '85254');
+(17, 'jd@me.com', 'Doan', 'Jane', '2147483647', '1111 nt 9th st', '44', 'Phoenix', 'Arizona', 11111, '85254'),
+(18, 'aefef@dsfsvs', 'asdfasces', 'asdfaefe', '1234567890', 'zSXdcasca', '', 'ascbs', 'sadvasv', 85258, 'oepk9t'),
+(19, 'asdo@sorvnsa', 'asdvlajsd', 'sfvna', '1123456789', 'slfkjefn', '', 'nrvei', 'nwevnce', 85214, 'fp9bk1'),
+(20, 'eoisdnsef@sdlocn', 'sldvkjvnw', 'asdlfkjasdf', '1234567890', 'advnadrvnwe', '', 'sveon', 'fsdvjonsd ', 64646, 'ml51lk'),
+(21, 'aefef@dsfsvs.com', 'ASDADVA', 'sfvna', '1123456789', 'hello st', '', 'mea', 'IL', 65454, 'c4pgbb'),
+(22, 'aefef@dsfsvs.com', 'ASDADVA', 'sfvna', '1123456789', 'hello st', '', 'mea', 'IL', 65454, '4q2ljm'),
+(23, 'aefef@dsfsvs.com', 'Dean', 'asdlfkjasdf', '1123456789', 'slfkjefn', '', 'ascbs', 'AZ', 85214, 'fykwqt'),
+(24, 'whoowhooo@yahoo.com', 'asdfasces', 'sfvna', '1123456789', 'asdfjsj2', '', 'nrvei', 'GA', 65464, '3wkfpq'),
+(25, 'aefef@dsfsvs.com', 'asdvlajsd', 'sfvna', '1123456789', 'advnadrvnwe', '', 'ascbs', 'DE', 54862, 'incen8'),
+(26, 'asdo@sorvnsa.com', 'asdvlajsd', 'Jimmy', '1234567890', 'zSXdcasca', '', 'nrvei', 'IA', 85214, 'dzb2ec'),
+(27, 'whoowhooo@yahoo.com', 'sldvkjvnw', 'jonk', '1123456789', 'asdfjsj2', '', 'mea', 'DE', 65454, 'oll2pa');
 
 -- --------------------------------------------------------
 
@@ -128,7 +137,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `DateShipped` datetime DEFAULT NULL,
   `DateConfirmed` datetime DEFAULT NULL,
   `Payment` varchar(30) NOT NULL,
-  `ReferralCode` varchar(15) DEFAULT NULL,  
+  `ReferralCode` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`OrderId`),
   KEY `AccountId` (`AccountId`),
   KEY `ModelId` (`ModelId`),
@@ -152,6 +161,42 @@ CREATE TABLE IF NOT EXISTS `quotes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Dumping data for table `quotes`
+--
+
+INSERT INTO `quotes` (`Id`, `Mint`, `Good`, `Poor`, `Broken`, `Dead`) VALUES
+(1, 70, 65, 30, 20, 5),
+(2, 80, 75, 40, 30, 10),
+(3, 100, 90, 50, 30, 20),
+(4, 105, 95, 60, 30, 20),
+(5, 115, 100, 70, 30, 20),
+(6, 140, 130, 110, 70, 50),
+(7, 155, 145, 135, 75, 50),
+(8, 170, 160, 145, 80, 50),
+(9, 150, 140, 120, 75, 50),
+(10, 160, 150, 130, 80, 50),
+(11, 210, 200, 150, 100, 50),
+(12, 220, 210, 170, 110, 50),
+(13, 240, 230, 190, 120, 50),
+(14, 400, 390, 210, 130, 60),
+(15, 420, 400, 230, 130, 60),
+(16, 440, 410, 250, 130, 60),
+(17, 475, 455, 350, 180, 80),
+(18, 490, 470, 360, 180, 80),
+(19, 500, 480, 370, 180, 80),
+(20, 250, 240, 130, 80, 30),
+(21, 260, 250, 140, 80, 30),
+(22, 270, 260, 150, 80, 30),
+(23, 280, 270, 160, 80, 30),
+(24, 330, 300, 170, 80, 30),
+(25, 350, 320, 180, 80, 30),
+(26, 320, 290, 160, 70, 30),
+(27, 350, 320, 180, 90, 30),
+(28, 360, 330, 190, 80, 30),
+(29, 370, 350, 200, 100, 40),
+(30, 400, 370, 210, 100, 40);
+
+--
 -- Constraints for dumped tables
 --
 
@@ -159,8 +204,8 @@ CREATE TABLE IF NOT EXISTS `quotes` (
 -- Constraints for table `orders`
 --
 ALTER TABLE `orders`
-  ADD CONSTRAINT `fk_model` FOREIGN KEY (`ModelId`) REFERENCES `models` (`ModelId`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_accid` FOREIGN KEY (`AccountId`) REFERENCES `accounts` (`AccountId`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `fk_accid` FOREIGN KEY (`AccountId`) REFERENCES `accounts` (`AccountId`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_model` FOREIGN KEY (`ModelId`) REFERENCES `models` (`ModelId`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `quotes`
