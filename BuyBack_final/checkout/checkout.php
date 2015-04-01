@@ -185,30 +185,32 @@
 				<div class="row setup-content" id="step-2">
 					<div class="col-xs-12">
 						<div class="col-md-12 well">
-							<h1 class="text-center"> How would you like us to <strong>pay</strong> you?</h1>
+							<h1 class="text-center"> How would you like us to <strong>PAY</strong> you?</h1>
 							<!-- Choose Payment Method -->
 							<div class="paymentmethod">
 								<div class="btn-group" data-toggle="buttons">
 									<label class="btn btn-primary active">
-										<input type="radio" name="payment" value="paypal" id="paypal"><img id="paypalimg" src="../images/paypal.png" alt="paypal" />
+										<input type="radio" name="payment" value="paypal" id="paypal"><br/><span class="btntext1">PayPal</span>
 									</label>
 									<label class="btn btn-primary">
-										<input type="radio" name="payment" value="check" id="check"><img id="checkimg" src="../images/check.png" alt="check" /><br/><span class="btntext1">Check</span>
+										<input type="radio" name="payment" value="check" id="check"><br/><span class="btntext1">Check</span>
 									</label>
 								</div>
 							</div>
-							<h1 class="text-center"> How would you like to<strong> ship </strong>your device?<br/><span class="sub">We pay for ALL shipping! It's FREE for you!</span></h1>
-							<!-- Choose Shipping Method -->
-							<div class="shippingmethod">
-								<div class="btn-group" data-toggle="buttons">
-									<label class="btn btn-primary active">
-										<input type="radio" name="shipping" id="paypal" value="send"><span class="btntext">Send me a <br/>buyback box!</span>
-									</label>
-									<label class="btn btn-primary">
-										<input type="radio" name="shipping" id="check" value="print"><span class="btntext">I have my own box!<br/> Print a shipping label now!</span>
-									</label>
-								</div>
+						
+						<h1 class="text-center"> How would you like to<strong> ship </strong>your device?<br/><span class="sub">We pay for ALL shipping! It's FREE for you!</span></h1>
+						<!-- Choose Shipping Method -->
+						<div class="shippingmethod">
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-primary active">
+									<input type="radio" name="payment" id="paypal" value="paypal"><span class="btntext">Send me a <br/>buyback box!</span>
+									
+								</label>
+								<label class="btn btn-primary">
+									<input type="radio" name="payment" id="check"><span class="btntext">I have my own box!<br/>Print a shipping label now!</span>
+								</label>
 							</div>
+						</div>
 							<button id="activate-step-3" class="btn btn-primary btn-lg">Next</button>
 						</div>
 					</div>

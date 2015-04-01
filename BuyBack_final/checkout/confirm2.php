@@ -114,22 +114,39 @@
   </head>
 
   <body>
+
+<script src="../scripts/jquery-share-master/jquery.share.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../scripts/jquery-share-master/jquery.share.css" type="text/css" />
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $('#socialshare').share({
+        networks: ['facebook','twitter','linkedin','email'],
+		title: 'Just sold my phone to www.BuybackBoss.com! Use my code "<?php echo $newrefcode?>" and get $10 toward your sale!',
+		urlToShare: 'www.buybackboss.com'
+    });
+});
+</script>
+
+
 <div class="modal fade" id="refer">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Join our referral program!</h4>
+        <h4 class="modal-title">Your friends have old iPhones, too.</h4>
       </div>
       <div class="modal-body">
 	  <div id="textrefer">
-        Share your referral code with friends! When they sell their device to Buyback Boss, you will get $10 and so will they!
+		When they sell their device to Buyback Boss, <span class="accent">you get $10</span> and <span class="accent">they get $10</span>!
+        <br/><br/><span class="lobster">Share your code: </span>
+		<div id="socialshare"></div>
+		<div id="copy">
+		<span class="lobster">Save it for later:</span>
+		<?php echo '<br/><span class="fakeinput">'.$newrefcode.'</span>';?></div>
 	  </div>
-	  <div id="share">
-	  <div id="fb">
-	  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div></div>
-	  <div id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a></div>
-	</div>
+	  <br/><span class="small">Learn more about the Buyback Boss referral program <a href="../referral">here</a>.
 	</div>
 	</div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -201,12 +218,8 @@
     </footer>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../scripts/bootstrap.js"></script>
-	<script src="../scripts/main.js"></script>
+
+
 
   </body>
 </html>

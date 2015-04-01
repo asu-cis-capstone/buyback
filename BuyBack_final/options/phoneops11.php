@@ -129,16 +129,16 @@
 								<input type="radio" name="carrier" id="att" value="AT&T" required><img src="../images/at-t.png" alt="ATT" />
 							</label>
 							 <label class="btn btn-primary">
-								<input type="radio" name="carrier" id="tmobile" value="tmobile"><img src="../images/t-mobile.png" alt="TMOBILE" />
+								<input type="radio" name="carrier" id="tmobile" value="TMOBILE"><img src="../images/t-mobile.png" alt="TMOBILE" />
 							 </label>
 							 <label class="btn btn-primary">
-								 <input type="radio" name="carrier" id="verizon" value="verizon" ><img src="../images/verizon.png" alt="Verizon" />
+								 <input type="radio" name="carrier" id="verizon" value="VERIZON" ><img src="../images/verizon.png" alt="Verizon" />
 							 </label>
 							 <label class="btn btn-primary">
-								 <input type="radio" name="carrier" id="sprint" value="sprint"><img src="../images/sprint.png" alt="Sprint" />
+								 <input type="radio" name="carrier" id="sprint" value="SPRINT"><img src="../images/sprint.png" alt="Sprint" />
 							 </label>
 							 <label class="btn btn-primary">
-								 <input type="radio" name="carrier" id="unlocked" value="unlocked"><img src="../images/unlocked.png" alt="Unlocked" />
+								 <input type="radio" name="carrier" id="unlocked" value="UNLOCKED"><img src="../images/unlocked.png" alt="Unlocked" />
 							 </label>
 						</div>
 						<h1>What size <?php echo $_SESSION['brand']; ?> do you have?
