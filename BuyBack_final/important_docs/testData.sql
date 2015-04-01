@@ -19,9 +19,7 @@ INSERT INTO `buybackb_testcis440`.`models` (`ModelId`, `Brand`, `Model`, `Size`,
 		   ('16', 'iPhone', '6', '128', NULL, 'AT&T'),
 		   ('17', 'iPhone', '6+', '16', NULL, 'AT&T'),
 		   ('18', 'iPhone', '6+', '64', NULL, 'AT&T'),
-		   ('19', 'iPhone', '6+', '128', NULL, 'AT&T'),
-		   
-		   
+		   ('19', 'iPhone', '6+', '128', NULL, 'AT&T'),		   
 		   ('20', 'samsung', 'S4', '16', NULL, 'AT&T'),
 		   ('21', 'samsung', 'S4', '32', NULL, 'AT&T'),
 		   ('22', 'samsung', 'S4', '64', NULL, 'AT&T'),

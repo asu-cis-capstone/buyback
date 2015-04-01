@@ -35,8 +35,8 @@
 	$city = $_POST['city'];
 	$state = $_POST['state'];
 	$zip = $_POST['zip'];
-	if(isset($_SESSION['refcode'])){
-		$rcode = $_SESSION['refcode'];
+	if(isset($_SESSION['rcode'])){
+		$rcode = $_SESSION['rcode'];
 	}
 	$payment = $_POST['payment'];
 	$shipping = $_POST['shipping'];
@@ -73,6 +73,7 @@
 	echo $shipping;
 	echo $date;
 	echo $payment;
+	echo $rcode;
 	$orderResult = mysqli_query($dbc, $orderQuery) or die('Unable to post order to db!');
 	
 	// Close the sql connection

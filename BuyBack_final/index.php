@@ -12,7 +12,7 @@
 	unset($_SESSION['quotes']);
 	unset($_SESSION['condition']);
 	unset($_SESSION['modelId']);
-	unset($_SESSION['refcode']);
+	unset($_SESSION['rcode']);
 	
 	
 ?>

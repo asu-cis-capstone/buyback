@@ -157,13 +157,17 @@
 							<!-- Referral Code -->	
 							<input type="text" class="form-control" id="refcode" name="refcode"
 							pattern="[a-z0-9]{6,6}"
-							title="Invalid referral code!"
 							onfocus="refmsg()"/>
 
 							<!-- Validate Button for Ref Code -->	
 							<span class="validate">
-								<input class="btn btn-success" type="submit" id="validate" value="Validate Code" 
-								onclick="location.href='process.php'"/>
+								<?php 
+									if(isset($_SESSION['rcode'])){
+										echo "<input class=\"btn btn-success\" type=\"button\" id=\"validate\" value=\"Code Validated\"/>";
+									} else {
+										echo "<input class=\"btn btn-success\" type=\"submit\" id=\"validate\" value=\"Validate Code\"/>";
+									}
+								?>
 							</span>
 						</form>
 						<br/><button id="activate-step-2" class="btn btn-primary btn-lg">Next</button>

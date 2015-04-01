@@ -22,7 +22,7 @@
 	}
 	if(mysqli_num_rows($result) == 1)
 	{
-		$_SESSION['refcode'] = $row['ReferralCode'];
+		$_SESSION['rcode'] = $rcode;
 		$_SESSION['quotes'][($_SESSION['condition'])] += 10;
 		header('Location: checkout.php');
 		exit;
