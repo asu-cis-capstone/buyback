@@ -111,7 +111,7 @@
 		<!-- Options and Selections -->
 		<h1>What condition is your phone in?
 			<span class="help">
-				<button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
+				<button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Read below the square buttons to find out which condition your phone falls under.">
 				?
 				</button>
 			</span>

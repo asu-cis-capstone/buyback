@@ -386,3 +386,15 @@ input:not([type=submit]):not([type=checkbox]):focus:invalid {
 		
 		
 }
+ 
+ input#validate.inactivebtn{
+		background-color: gray;
+		border-color: gray;
+		font-weight: bold;
+ }
+
+ .success{
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 110%;
+ 
+ }

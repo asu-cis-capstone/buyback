@@ -115,7 +115,7 @@
 		<!-- Options and Selections -->
 		<h1>What network are you on?
 			<span class="help">
-				<button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
+				<button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Carrier information can be found in Settings > General > About.">
 					?
 				</button>
 			</span>
@@ -142,7 +142,7 @@
 							 </label>
 						</div>
 						<h1>What size <?php echo $_SESSION['brand']; ?> do you have?
-							<button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Help with network.">
+							<button id="help" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Capacity can be found in Settings > General > About.">
 							?
 							</button>
 						</h1>

@@ -16,16 +16,28 @@
 
 h4{
 	
-	font-size: 300%;
+	font-size: 250%;
 	font-weight: bold;
 
 }
 
 .modal-body{
 	font-size: 150%;
-	padding-bottom: 200px;
-
+	padding-bottom: 50px;
 }
+.lobster{
+	font-family: "Lobster", sans-serif;
+	font-size: 190%;
+}
+
+.fakeinput{
+	font-size: 150%;
+	border: thin solid gray;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 10px;
+}
+
 #modalimg{
  height: 100%;
  width: 100%;
@@ -45,35 +57,12 @@ h1{
 #textrefer{
 	width: 100%;
 }
+.accent{
+	color: #ce0a0a;
+	font-weight: bold;
 
-
-#twitter{
-	margin-left: 60px;
-	margin-top: 45px;
-	float: left;
-	
-	
 }
-
-#share{
-	width: 100%;
-	padding-left: 28%;
-}
-#fb{
-	margin-top: 30px;
-	float: left;
-	
-}
- .fb-share-button
-{
-transform: scale(1.5);
--ms-transform: scale(1.5);
--webkit-transform: scale(1.5);
--o-transform: scale(1.5);
--moz-transform: scale(1.5);
-transform-origin: top left;
--ms-transform-origin: top left;
--webkit-transform-origin: top left;
--moz-transform-origin: top left;
--webkit-transform-origin: top left;
+#socialshare{
+	margin-top: 15px;
+	margin-bottom: 15px;
 }

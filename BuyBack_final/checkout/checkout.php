@@ -155,15 +155,23 @@
 						<h1>Do you have a <strong>referral</strong> or <strong>coupon</strong> code?</h1>
 						<form id="referral" action="process.php" method="post">
 							<!-- Referral Code -->	
-							<input type="text" class="form-control" id="refcode" name="refcode"
-							pattern="[a-z0-9]{6,6}"
-							onfocus="refmsg()"/>
+							<?php 
+									if(isset($_SESSION['rcode'])){
+										echo "<p class = 'success'>Your discount code has been applied!<br/>Click Next to continue!</p>";
+									} else{ 
+									echo "
+										
+							<input type='text' class='form-control' id='refcode' name='refcode'
+							pattern='[a-z0-9]{6,6}'
+							onfocus='refmsg()'
+							/>"; }
+							?>
 
 							<!-- Validate Button for Ref Code -->	
 							<span class="validate">
 								<?php 
 									if(isset($_SESSION['rcode'])){
-										echo "<input class=\"btn btn-success\" type=\"button\" id=\"validate\" value=\"Code Validated\"/>";
+										echo "<img id='greencheck' src='../images/validgreen.png' alt='Check' height='45' width='45'>";
 									} else {
 										echo "<input class=\"btn btn-success\" type=\"submit\" id=\"validate\" value=\"Validate Code\"/>";
 									}
@@ -189,12 +197,13 @@
 							<!-- Choose Payment Method -->
 							<div class="paymentmethod">
 								<div class="btn-group" data-toggle="buttons">
-									<label class="btn btn-primary active">
-										<input type="radio" name="payment" value="paypal" id="paypal"><br/><span class="btntext1">PayPal</span>
+									<label class="btn btn-primary">
+										<input type="radio" name="payment" value="check" required id="check"><br/><span class="btntext1">Check</span>
 									</label>
 									<label class="btn btn-primary">
-										<input type="radio" name="payment" value="check" id="check"><br/><span class="btntext1">Check</span>
+										<input type="radio" name="payment" value="paypal" id="paypal"><br/><span class="btntext1">PayPal</span>
 									</label>
+									
 								</div>
 							</div>
 						
@@ -202,12 +211,12 @@
 						<!-- Choose Shipping Method -->
 						<div class="shippingmethod">
 							<div class="btn-group" data-toggle="buttons">
-								<label class="btn btn-primary active">
-									<input type="radio" name="payment" id="paypal" value="paypal"><span class="btntext">Send me a <br/>buyback box!</span>
+								<label class="btn btn-primary">
+									<input type="radio" name="shipping" id="sendbox" required value="Send Box"><span class="btntext">Send me a <br/>buyback box!</span>
 									
 								</label>
 								<label class="btn btn-primary">
-									<input type="radio" name="payment" id="check"><span class="btntext">I have my own box!<br/>Print a shipping label now!</span>
+									<input type="radio" name="shipping" id="sendlabel" value="Send Label"><span class="btntext">I have my own box!<br/>Print my label now!</span>
 								</label>
 							</div>
 						</div>

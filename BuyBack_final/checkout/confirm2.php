@@ -38,6 +38,9 @@
 	if(isset($_SESSION['rcode'])){
 		$rcode = $_SESSION['rcode'];
 	}
+	else{
+		$rcode = 'None';
+	}
 	$payment = $_POST['payment'];
 	$shipping = $_POST['shipping'];
 	//Check for existing account
@@ -56,25 +59,13 @@
 	$accountIdQuery = "SELECT AccountId FROM accounts WHERE Email = '$email' && LastName = '$lname' && FirstName = '$fname' && PhoneNum = '$pnumber' && Address1 = '$saddress' && Address2 = '$aptnumber' && City = '$city' && State = '$state' && Zip = '$zip'";
 	$accountIdReturn = mysqli_query($dbc, $accountIdQuery) or die('Unable to find accountId');
 	$row = mysqli_fetch_array($accountIdReturn);
-	$accountId = $row[0];
-	$modelId = $_SESSION['modelId'];
-	$salePrice = $_SESSION['quotes'][($_SESSION['condition'])];
+	$accountId = (int)$row[0];
+	$modelId = (int)$_SESSION['modelId'];
+	$salePrice = (int)$_SESSION['quotes'][(int)($_SESSION['condition'])];
 	$date = date("Y-m-d");
-	if(isset($rcode)){
-		$orderQuery = "INSERT INTO orders(OrderId, AccountId, ModelId, PostedPrice, ShipStatus, ShipMethod, DateRecieved, Payment, ReferralCode)" . 
-								"VALUES (NULL, '$accountId', '$modelId', '$salePrice', 'Received', '$shipping','$date', '$payment', '$rcode')";
-	}
-	else{
-		$orderQuery = "INSERT INTO orders(OrderId, AccountId, ModelId, PostedPrice, ShipStatus, ShipMethod, DateRecieved, Payment) VALUES (NULL, '$accountId', '$modelId', '$salePrice', 'Received', '$shipping','$date', '$payment')";
-	}
-	echo $accountId;
-	echo $modelId;
-	echo $salePrice;
-	echo $shipping;
-	echo $date;
-	echo $payment;
-	echo $rcode;
-	$orderResult = mysqli_query($dbc, $orderQuery) or die('Unable to post order to db!');
+	$orderQuery = "INSERT INTO orders(AccountId, ModelId, PostedPrice,ShipStatus,ShipMethod, DateReceived,Payment,ReferralCode) VALUES ('$accountId', '$modelId','$salePrice','Received','$shipping','$date','$payment','$rcode')";
+	echo $accountId . " Model: " . $modelId ." Price: ". $salePrice . " Ship: ".$shipping . " Date: ".$date. " Payment: " . $payment . " Code: " . $rcode;
+	$orderResult = mysqli_query($dbc, $orderQuery) or die(' Unable to post order to db!');
 	
 	// Close the sql connection
 	mysqli_close($dbc);
@@ -105,6 +96,11 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+	
+	<!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../scripts/bootstrap.js"></script>
+	<script src="../scripts/main.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
