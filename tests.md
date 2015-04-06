@@ -10,7 +10,7 @@ These three forms of testing will allow for a diverse set of results that will a
  
 Our team and client have come up with the following useful test cases: 
 
-**Test cases**
+**Test cases:**
   * User navigates to BuybackBoss.com to sell his 16GB iPhone 5 on Verizon. The user wants to be paid by check and does not have a box to send his phone in.
   * User navigates to BuybackBoss.com to sell device of choice and wants to share referral code to friends via Twitter. 
 
