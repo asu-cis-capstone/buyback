@@ -16,7 +16,7 @@ Our team and client have come up with the following useful test cases:
   5. User navigates to BuyBackBoss.com to sell their 8GB Verizon iPhone 4. The user attempts to enter their own referral code to receive an extra $10.
   6. A previous user navigates to BuyBackBoss.com to sell their Unlocked 32GB iPhone 5C. When filling in their information, they enter it all the same as before, but enter in a new phone number.
   7. User tries to sell a Verizon iPhone 5 32GB and as he/she is filling out information realizes it’s a 16GB and has to go back to change the size of the iPhone
-  8. User buys any phone of their choice and tries to put in a referral code but caps lock is on, on their box. 
+  8. User sells device of their choice and tries to put in a referral code but caps lock is on.
   
 
 **Interpretation of Results:**
