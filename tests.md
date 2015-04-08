@@ -4,7 +4,7 @@
 Our team plans to utilize 3 different testing mechanisms to analyze the effectiveness of basic site design and referral program.  The three sources we plan to use are:
    * Real user testing 
    * Usability Hub
-   * Insert Automated Testing Program
+   * Selenium Automated Testing
  
 Our team and client have come up with the following useful test cases: 
 
