@@ -13,6 +13,7 @@
 	unset($_SESSION['condition']);
 	unset($_SESSION['modelId']);
 	unset($_SESSION['rcode']);
+	unset($_SESSION['invalid']);
 	
 	
 ?>

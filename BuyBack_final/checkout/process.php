@@ -17,6 +17,7 @@
 	//Check to see if we got any rows
 	if (mysqli_num_rows($result) == 0)
 	{
+		$_SESSION['invalid'] = 1;
 		header('Location: checkout.php');
 		exit;
 	}

@@ -158,13 +158,22 @@
 							<?php 
 									if(isset($_SESSION['rcode'])){
 										echo "<p class = 'success'>Your discount code has been applied!<br/>Click Next to continue!</p>";
-									} else{ 
+									} 
+									elseif(isset($_SESSION['invalid'])){
+										echo"<p class = 'successred'>Your discount code was invalid! Please try again!</p>
+										
+										<input type='text' class='form-control' id='refcode' name='refcode'
+										pattern='[a-z0-9]{6,6}'
+										onfocus='refmsg()'
+										/>";
+									}
+									else{ 
 									echo "
 										
-							<input type='text' class='form-control' id='refcode' name='refcode'
-							pattern='[a-z0-9]{6,6}'
-							onfocus='refmsg()'
-							/>"; }
+										<input type='text' class='form-control' id='refcode' name='refcode'
+										pattern='[a-z0-9]{6,6}'
+										onfocus='refmsg()'
+										/>"; }
 							?>
 
 							<!-- Validate Button for Ref Code -->	
@@ -172,7 +181,12 @@
 								<?php 
 									if(isset($_SESSION['rcode'])){
 										echo "<img id='greencheck' src='../images/validgreen.png' alt='Check' height='45' width='45'>";
-									} else {
+									} 
+									elseif(isset($_SESSION['invalid'])){
+										echo "
+												<input class=\"btn btn-success\" type=\"submit\" id=\"validate\" value=\"Validate Code\"/>";
+									}
+									else {
 										echo "<input class=\"btn btn-success\" type=\"submit\" id=\"validate\" value=\"Validate Code\"/>";
 									}
 								?>

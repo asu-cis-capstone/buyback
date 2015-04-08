@@ -398,3 +398,9 @@ input:not([type=submit]):not([type=checkbox]):focus:invalid {
 	font-size: 110%;
  
  }
+ 
+  .successred{
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 110%;
+	color: red;
+ }
