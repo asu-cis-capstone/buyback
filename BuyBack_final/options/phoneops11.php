@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-
 <?php
-	session_start();
+	session_start("order");
 	
 	if(!isset($_SESSION['model']))
 	{
@@ -10,8 +8,9 @@
 	
 
 	
-
+	session_write_close();
 ?>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>

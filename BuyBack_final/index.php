@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-
 <?php
-
-		
-	
-	session_start();
+	//ini_set('session.save_path', '/home3/buybackb/public_html/testcis440/session');
+	if(session_status() == PHP_SESSION_ACTIVE){
+		var_dump($_SESSION);
+		session_destroy();
+	}
+	session_start("order");
 	unset($_SESSION['brand']);
 	unset($_SESSION['model']);
 	unset($_SESSION['carrier']);
@@ -12,12 +12,11 @@
 	unset($_SESSION['quotes']);
 	unset($_SESSION['condition']);
 	unset($_SESSION['modelId']);
-	unset($_SESSION['rcode']);
+	unset($_SESSION['rcode']); 
 	unset($_SESSION['invalid']);
-	
-	
+	session_write_close();
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">

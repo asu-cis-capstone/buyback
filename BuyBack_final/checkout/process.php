@@ -1,6 +1,6 @@
 <?php
 	//Validate Referral Code
-	session_start();
+	session_start("order");
 	// Set up db connection
 	include('../connection/localconnection.php');
 	
@@ -25,6 +25,7 @@
 	{
 		$_SESSION['rcode'] = $rcode;
 		$_SESSION['quotes'][($_SESSION['condition'])] += 10;
+		session_write_close();
 		header('Location: checkout.php');
 		exit;
 	}
@@ -35,7 +36,7 @@
 	
 	//Start PHP session 
 	
-	
+	session_write_close();
 	
 	//Get and store our PHP session variables
 	

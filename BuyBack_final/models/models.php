@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-
 <?php
-
-	session_start();
+	session_start("order");
 	if(isset($_SESSION['brand']))
 	{
 		$brand = $_SESSION['brand'];
@@ -31,8 +28,11 @@
 		echo 'MySQL error: ' . mysql_error();
 		exit;
 	}
-	
+	session_write_close();
 ?>
+<!DOCTYPE html>
+
+
 
 <html lang="en">
   <head>

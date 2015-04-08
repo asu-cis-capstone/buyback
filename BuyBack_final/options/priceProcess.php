@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	session_start("order");
 		
 	$brand = $_SESSION['brand'];
 	$model = $_SESSION['model'];
@@ -53,6 +53,7 @@
 
 	$_SESSION['quotes'] = $quotes;
 	$_SESSION['modelId'] = $rows[0];
+	session_write_close();
 	header('Location: phoneops22.php');
 	exit;
 

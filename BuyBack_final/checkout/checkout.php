@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-
 <?php
-	session_start();
+	session_start("order");
 	if(isset($_SESSION['condition']))
 	{
 		$condition = $_SESSION['condition'];
@@ -11,8 +9,9 @@
 		$_SESSION['condition'] = $_POST['condition'];
 		$condition = $_SESSION['condition'];
 	}
+	session_write_close();
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">

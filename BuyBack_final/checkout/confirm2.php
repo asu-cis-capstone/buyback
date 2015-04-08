@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-
 <?php
-	session_start();
+	session_start("order");
 	//Connect to the db (Local or Server)
 	include('../connection/localconnection.php');
 	
@@ -73,8 +71,12 @@
 	
 	// Close the sql connection
 	mysqli_close($dbc);
-
+	session_write_close();
 ?>
+
+<!DOCTYPE html>
+
+
 
 <html lang="en">
   <head>
