@@ -22,5 +22,6 @@ Our team and client have come up with the following useful test cases:
   
 
 **Interpretation of Results:**
-  * TBD
-  * TBD
+  * The one test that fails is TestTwo and this is because it is difficult to return to Buyback Boss after they post to social media. We can make the social media post come open in a different tab to fix this issue. 
+  * When a user selects a invalid option for a certain phone we need to have validation so they can not continue to the next step until they make a valid choice. 
+  * There also needs to be a way to go back in the process so the user has an easier time fixing a mistake he/she had made about their real phone information. Right now if you try and go back and change informatin you have to start the enitre process over again. 
