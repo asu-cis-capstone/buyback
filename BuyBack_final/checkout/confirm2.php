@@ -44,9 +44,9 @@
 	//Check for existing account
 	$existQuery = "SELECT * FROM accounts WHERE Email = '$email' && LastName = '$lname' && FirstName = '$fname' && PhoneNum = '$pnumber' && Address1 = '$saddress' && Address2 = '$aptnumber' && City = '$city' && State = '$state' && Zip = '$zip'";
 	$checkExist = mysqli_query($dbc, $existQuery) or die('Unable to query accounts');
-	$refrow = mysqli_fetch_array($checkExist);
+	/* $refrow = mysqli_fetch_array($checkExist); */
 	
-	if(!$checkExist){
+	if($checkExist){
 		//Build SQL statement
 		$query =
 		"INSERT INTO accounts(Email, LastName, FirstName, PhoneNum, Address1, Address2, City, State, Zip, ReferralCode)" .
@@ -55,9 +55,9 @@
 		//Run the query
 		$result = mysqli_query($dbc, $query) or die('Unable to write to the database!');
 	}
-	else{
+/* 	else{
 		$newrefcode = $refrow['ReferralCode'];
-	}
+	} */
 	$accountIdQuery = "SELECT AccountId FROM accounts WHERE Email = '$email' && LastName = '$lname' && FirstName = '$fname' && PhoneNum = '$pnumber' && Address1 = '$saddress' && Address2 = '$aptnumber' && City = '$city' && State = '$state' && Zip = '$zip'";
 	$accountIdReturn = mysqli_query($dbc, $accountIdQuery) or die('Unable to find accountId');
 	$row = mysqli_fetch_array($accountIdReturn);
@@ -169,7 +169,7 @@ $(document).ready(function () {
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-			<li><a href="../index.php">HOME</a></li>
+			<li><a href="../start.php">HOME</a></li>
             <li><a href="../index.php#home">HOW IT WORKS</a></li>
             <li><a href="#press">PRESS & REVIEWS</a></li>
             <li class="SUPPORT">

@@ -1,14 +1,9 @@
 <?php
 	session_start("order");
-	if(isset($_SESSION['brand']))
-	{
-		$brand = $_SESSION['brand'];
-	}
-	else
-	{
+
 		$_SESSION['brand'] = $_GET['brand'];
 		$brand = $_SESSION['brand'];
-	}
+	
 	if($brand == 'iPhone'){
 		$_SESSION['image'] = 'images/iphone.png';
 	}
@@ -82,7 +77,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-			<li><a href="../index.php">HOME</a></li>
+			<li><a href="../start.php">HOME</a></li>
             <li><a href="../index.php#home">HOW IT WORKS</a></li>
             <li><a href="#press">PRESS & REVIEWS</a></li>
             <li class="SUPPORT">
