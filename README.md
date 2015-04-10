@@ -48,3 +48,6 @@ NOTE: Steps 2 and 5 are only necessary if you wish to test/make changes to the d
 ###v0.4 Release Notes
 https://www.youtube.com/watch?v=UxQkIhcjkOA
 
+###v0.6 Release Notes
+Test scripts included in folder "AutomatedTestCasesScript" and test results in test.md
+
