@@ -1,0 +1,209 @@
+#small_phone_left {
+	height: 400px;
+}
+
+#phoneImage{
+	width: 25%;
+	float: left;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    #small_phone_left {
+        display: none;
+    }
+	
+	h1{
+		font-size: 75%;
+	}
+	
+}
+
+.btn-primary{
+	background-color: rgba(211, 211, 211, 0.27);
+	color: gray;
+}
+
+.btn-primary.active{
+	background-color: gray;
+	color: white;
+
+}
+
+	
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 10px 0px 0px;
+	border: none;
+
+}
+
+.stepwizard .btn-primary{
+	background-color: #ce0a0a;
+	color: white;
+	border: #ce0a0a;
+}
+
+.stepwizard .btn-primary:hover{
+	background-color: darkgrey;
+	color: white;
+	border: darkgrey;
+}
+
+button#help.btn.btn-default{
+border-radius: 100%;
+font-size: 25%;
+height: 25px;
+width: 25px;
+margin-bottom: 15px;
+}
+
+h1{
+	font-size: 250%;
+	color: #ce0a0a;
+	font-family: "Oswald", sans-serif;
+	float: left;
+	width: 50%;
+}
+
+#steps{
+	margin-top: 5px;
+}
+
+/*Step wizard*/
+
+.stepwizard-step p {
+    margin-top: 10px;    
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;     
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+    
+}
+
+.stepwizard-step {    
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  
+}
+
+.btn-group{
+	float: left;
+}
+.btn-group img {
+    height: 35px;
+    margin-top: 20%;
+}
+
+#form .btn-primary{
+    border-radius: 2px;
+	height: 80px;
+    width: 80px;
+	margin: 10px;
+	border: thin solid gray;
+	
+}
+
+#form .btn-primary:hover {
+	background-color: darkgrey;
+
+}
+
+
+#form .help .btn-default {
+    height: 20px;
+    width: 20px;
+    border-radius: 30%;
+    font-size: 30%;
+
+}
+
+#form .storage .btn-primary {
+	height: 80px;
+    width: 80px;
+	margin: 10px;
+	padding-top: 20px;
+	border: thin solid gray;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	
+	font-size: 150%;
+}
+
+#form .storage .btn-primary:hover {
+	background-color: darkgrey;
+	color: white;
+}
+
+#checkoutButton{
+    color: #fff;
+	font-weight: bold;
+	font-family: aharoni, arial, sans-serif;
+	background-color:#ce0a0a;
+	position: relative;
+	float: left;
+	margin: 15px;
+	width: 120px;
+	height: 40px;
+	border: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-top: 125px;
+}
+
+#checkoutButton:hover{
+	background-color: #B90D0D;
+}
+
+
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+  position: relative;
+  float: left;
+  margin: 15px;
+  border: thin solid lightgray;
+}
+
+
+
+.storage{
+	margin-top: 10px;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}

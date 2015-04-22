@@ -1,0 +1,68 @@
+#message-container {
+	font-family: "Century Gothic",Aharoni, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+#message {
+	text-align: center;
+}
+
+#refer{
+	font-family: "Open Sans Condensed", sans-serif;
+	color: gray;
+	text-align: center;
+}
+
+h4{
+	
+	font-size: 250%;
+	font-weight: bold;
+
+}
+
+.modal-body{
+	font-size: 150%;
+	padding-bottom: 50px;
+}
+.lobster{
+	font-family: "Lobster", sans-serif;
+	font-size: 190%;
+}
+
+.fakeinput{
+	font-size: 150%;
+	border: thin solid gray;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 10px;
+}
+
+#modalimg{
+ height: 100%;
+ width: 100%;
+}
+
+h1{
+	font-size: 500%;
+	font-family: "Oswald",sans serif;
+	color: #ce0a0a;
+	text-align: center;
+}
+
+.pluginCountButton {
+    height: 1000px;
+}
+
+#textrefer{
+	width: 100%;
+}
+.accent{
+	color: #ce0a0a;
+	font-weight: bold;
+
+}
+#socialshare{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
